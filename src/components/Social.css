@@ -1,0 +1,39 @@
+.social {
+    background: rgb(0, 82, 155);
+    position: absolute;
+    height: 2.75rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    justify-content: left;
+    align-items: left;
+}
+
+.social-container{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 2.75rem;
+    max-width: 1500p
+}
+
+.social-link{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+    height: 2.75rem;
+}
+
+.social-icon{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1.75rem;
+    height: 1.75rem;
+}
