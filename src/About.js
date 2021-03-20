@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
-import gatorLogo from "./Images/Gators Logo.png";
-import calendar from "./Images/calendar.png"
+import gatorLogo from "./components/Images/Gators Logo.png";
+import calendar from "./components/Images/calendar.png"
 
 function About() {
   return (
