@@ -1,22 +1,10 @@
 import React from 'react';
-import reactDom from 'react-dom';
+import Header from './components/header';
+import Footer from './components/footer';
+import PageTitle from './components/pageTitle';
 import './members.css';
 
 const address = "100 Farrior Hall at 205 Fletcher Drive, P.O. Box 112015, University of Florida, Gainesville, FL 32611-2015";
-
-class PageHeader extends React.Component
-{
-  render()
-  {
-    return (
-      <div>
-        <h1>
-          {this.props.text}
-        </h1>
-      </div>
-    );
-  }
-}
 
 class MemberBox extends React.Component
 {
@@ -65,51 +53,35 @@ class MemberGrid extends React.Component
   }
 }
 
-class Footer extends React.Component
-{
-  render()
-  {
-    return (
-      <div>
-      <p>
-        {address}
-      </p>
-      </div>
-    );
-  }
-}
-
-export default class Page extends React.Component
+export default class Members extends React.Component
 {
   render()
   {
     var boxes = [
-      <MemberBox name="Member 1 Name" imgPath="logo192.png" role="Role"/>,
-      <MemberBox name="Member 2 Name" imgPath="logo192.png" role="Role"/>,
-      <MemberBox name="Member 3 Name" imgPath="logo192.png" role="Role"/>,
-      <MemberBox name="Member 4 Name" imgPath="logo192.png" role="Role"/>,
-      <MemberBox name="Member 5 Name" imgPath="logo192.png" role="Role"/>,
-      <MemberBox name="Member 6 Name" imgPath="logo192.png" role="Role"/>,
-      <MemberBox name="Member 7 Name" imgPath="logo192.png" role="Role"/>,
-      <MemberBox name="Member 8 Name" imgPath="logo192.png" role="Role"/>
+      <MemberBox name="Member 1 Name" imgPath="gators.png" role="Role"/>,
+      <MemberBox name="Member 2 Name" imgPath="gators.png" role="Role"/>,
+      <MemberBox name="Member 3 Name" imgPath="gators.png" role="Role"/>,
+      <MemberBox name="Member 4 Name" imgPath="gators.png" role="Role"/>,
+      <MemberBox name="Member 5 Name" imgPath="gators.png" role="Role"/>,
+      <MemberBox name="Member 6 Name" imgPath="gators.png" role="Role"/>,
+      <MemberBox name="Member 7 Name" imgPath="gators.png" role="Role"/>,
+      <MemberBox name="Member 8 Name" imgPath="gators.png" role="Role"/>
     ];
     return (
       <div className='page'>
-        <div className="header">
-          <PageHeader header text="Meet Our Members"/>
+        <div>
+          <Header/>
+        </div>
+        <div>
+          <PageTitle text="Meet Our Members"/>
         </div>
         <div className='member-grid'>
           <MemberGrid memberBoxes = {boxes}/>
         </div>
-        <div className='footer'>
+        <div>
           <Footer/>
         </div>
       </div>
     );
   }
 }
-
-reactDom.render(
-  <Page/>,
-  document.getElementById('root')
-  );

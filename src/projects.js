@@ -1,20 +1,8 @@
 import React from 'react';
-import reactDom from 'react-dom';
+import Header from './components/header';
+import Footer from './components/footer';
+import PageTitle from './components/pageTitle';
 import './projects.css';
-
-class PageHeader extends React.Component
-{
-  render()
-  {
-    return (
-      <div>
-        <h1>
-          {this.props.text}
-        </h1>
-      </div>
-    );
-  }
-}
 
 class ProjectBox extends React.Component
 {
@@ -61,7 +49,7 @@ class ProjectBoxList extends React.Component
     }
 }
 
-export default class Page extends React.Component
+export default class Projects extends React.Component
 {
     render()
     {
@@ -69,32 +57,33 @@ export default class Page extends React.Component
         var testInfoLong = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
         var projectBoxes = [
-            <ProjectBox imgPath="logo192.png" title="Project 1" info={testInfoShort}/>,
-            <ProjectBox imgPath="logo192.png" title="Project 2" info={testInfoLong}/>,
-            <ProjectBox imgPath="logo192.png" title="Project 3" info={testInfoShort}/>,
-            <ProjectBox imgPath="logo192.png" title="Project 4" info={testInfoShort}/>,
-            <ProjectBox imgPath="logo192.png" title="Project 5" info={testInfoShort}/>,
-            <ProjectBox imgPath="logo192.png" title="Project 6" info={testInfoLong}/>,
-            <ProjectBox imgPath="logo192.png" title="Project 7" info={testInfoShort}/>,
-            <ProjectBox imgPath="logo192.png" title="Project 8" info={testInfoShort}/>,
-            <ProjectBox imgPath="logo192.png" title="Project 9" info={testInfoShort}/>,
-            <ProjectBox imgPath="logo192.png" title="Project 10" info={testInfoLong}/>
+            <ProjectBox imgPath="gators.png" title="Project 1" info={testInfoShort}/>,
+            <ProjectBox imgPath="gators.png" title="Project 2" info={testInfoLong}/>,
+            <ProjectBox imgPath="gators.png" title="Project 3" info={testInfoShort}/>,
+            <ProjectBox imgPath="gators.png" title="Project 4" info={testInfoShort}/>,
+            <ProjectBox imgPath="gators.png" title="Project 5" info={testInfoShort}/>,
+            <ProjectBox imgPath="gators.png" title="Project 6" info={testInfoLong}/>,
+            <ProjectBox imgPath="gators.png" title="Project 7" info={testInfoShort}/>,
+            <ProjectBox imgPath="gators.png" title="Project 8" info={testInfoShort}/>,
+            <ProjectBox imgPath="gators.png" title="Project 9" info={testInfoShort}/>,
+            <ProjectBox imgPath="gators.png" title="Project 10" info={testInfoLong}/>
         ];
 
         return (
             <div>
-              <div className="header">
-                <PageHeader text="Projects"/>
+              <div>
+                <Header/>
+              </div>
+              <div>
+                <PageTitle text="Projects"/>
               </div>
               <div>
                 <ProjectBoxList boxes={projectBoxes}/>
+              </div>
+              <div>
+                <Footer/>
               </div>
             </div>
         );
     }
 }
-
-reactDom.render(
-    <Page/>,
-    document.getElementById('root')
-);
