@@ -12,11 +12,9 @@ code {
     monospace;
 }
 
-.header {
-  text-align:center;
-}
-
 .member-grid {
+  margin-top:5em;
+  margin-bottom:5em;
   background-color:black;
 }
 
@@ -39,8 +37,7 @@ code {
   margin-right:1em;
 }
 
-.footer {
-  background-color:orange;
-  padding:2em;
-  width:100vmax;
+.member-image img {
+  width:15em;
+  max-height:auto;
 }

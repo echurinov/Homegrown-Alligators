@@ -30,6 +30,11 @@ code {
     height:fit-content;
 }
 
+.project-image img {
+    width:20em;
+    max-height:auto;
+}
+
 .project-data {
     display:flex;
     flex-direction:column;
