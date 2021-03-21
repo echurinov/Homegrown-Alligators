@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import PageTitle from "./components/pageTitle";
-import Map from "./Images/Map.png";
+import Map from "./components/Images/Map.png";
+import Header from "./components/header";
+import Footer from "./components/footer";
 import "./Contact.css";
 
 const Button = styled.button`
@@ -26,6 +28,9 @@ const Button = styled.button`
 function Contact() {
   return (
     <div className="contact">
+      <div>
+        <Header/>
+      </div>
       <PageTitle text="CONTACT US"/>
       <div className="contact-content-contex">
         <li className="contact-content">
@@ -67,6 +72,9 @@ function Contact() {
             <img src={Map} />
           </div>
         </li>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );
