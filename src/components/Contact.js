@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import "./Contact.css";
+import PageTitle from "./components/pageTitle";
 import Map from "./Images/Map.png";
+import "./Contact.css";
 
 const Button = styled.button`
   background: rgb(216, 113, 50);
@@ -25,7 +26,7 @@ const Button = styled.button`
 function Contact() {
   return (
     <div className="contact">
-      <h1 className="contact-heading"> CONTACT US </h1>
+      <PageTitle text="CONTACT US"/>
       <div className="contact-content-contex">
         <li className="contact-content">
           <div className="contact-body">
