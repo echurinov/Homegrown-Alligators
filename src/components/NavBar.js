@@ -11,7 +11,7 @@ function NavBar() {
     <nav className="navbar">
       {/*This part represents the club logo*/}
       <Link to="/" className="navbar-logo-area">
-        <img className="navbar-logo" src={logo} />
+        <img className="navbar-logo" src={logo} alt=""/>
         <h4>Space Systems Design Club</h4>
       </Link>
 

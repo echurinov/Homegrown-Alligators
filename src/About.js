@@ -20,7 +20,7 @@ function About() {
       
       
       <div className="about-body">
-        <img className="about-image" src={gatorLogo}/>
+        <img className="about-image" src={gatorLogo} alt=""/>
         <p className="about-description">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -36,7 +36,7 @@ function About() {
       </div>
       
 
-      <img className="calendar-temp-image" src={calendar}></img>
+      <img className="calendar-temp-image" src={calendar} alt=""/>
 
       <div>
         <Footer/>
