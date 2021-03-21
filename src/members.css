@@ -13,7 +13,6 @@ code {
 }
 
 .member-grid {
-  margin-top:5em;
   margin-bottom:5em;
   background-color:black;
 }
@@ -29,15 +28,23 @@ code {
 }
 
 .member-box {
-  width:fit-content;
+  width:15%;
   height:fit-content;
   text-align:center;
-  background-color:orange;
-  margin-left:1em;
-  margin-right:1em;
+  margin-left:5%;
+  margin-right:5%;
 }
 
 .member-image img {
-  width:15em;
+  width:100%;
   max-height:auto;
+}
+
+.member-info {
+  font-size:100%;
+}
+
+.member-name {
+  font-size:110%;
+  font-weight:bold;
 }
