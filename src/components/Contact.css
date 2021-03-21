@@ -4,14 +4,6 @@
   overflow-y: auto;
 }
 
-.contact-heading {
-  font-size: 300%;
-  color: rgb(0, 82, 155);
-  text-align: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
 .contact-body {
   display: flex;
   flex-direction: column;
@@ -21,7 +13,6 @@
   margin-bottom: 80px;
   width: 65rem;
 }
-
 
 .contact-image {
   width: 35%;
@@ -57,14 +48,14 @@
   margin-bottom: 50px;
 }
 
-.content-type{
+.content-type {
     font-style: bold;
     font-size: 25px;
     color: black; 
     padding-top: 10px;
 }
 
-.content-info{
+.content-info {
     display: inline;
     font-size: 20px;
     color: rgb(91, 113, 133); 
@@ -73,8 +64,7 @@
     list-style: none;
 }
 
-.contact-button{
+.contact-button {
     font-size: 20px;
     font-style: bold;
 }
-
