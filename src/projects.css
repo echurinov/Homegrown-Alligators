@@ -11,6 +11,10 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.page {
+    background-color: rgb(219, 223, 209);
+}
+
 .project-box-list {
     display:flex;
     flex-direction:column;
@@ -39,7 +43,17 @@ code {
     margin-left:5%;
 }
 
+.project-title {
+    font-size:200%;
+    color: rgb(0, 82, 155);
+    margin-bottom:1em;
+}
+
 .project-info {
     word-wrap:break-word;
     max-width:100%;
+    border: 10px white solid;
+    background: rgba(255, 255, 255, 0.3);
+    padding:1em;
+    font-size:130%;
 }

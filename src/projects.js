@@ -14,9 +14,11 @@ class ProjectBox extends React.Component
                     <img src={this.props.imgPath} alt=""/>
                 </div>
                 <div className="project-data">
-                    <h2>
-                        {this.props.title}
-                    </h2>
+                    <div className="project-title">
+                        <h2>
+                            {this.props.title}
+                        </h2>
+                    </div>
                     <div className="project-info">
                         <text>
                           {this.props.info}
@@ -70,12 +72,12 @@ export default class Projects extends React.Component
         ];
 
         return (
-            <div>
+            <div className="page">
               <div>
                 <Header/>
               </div>
               <div>
-                <PageTitle text="Projects"/>
+                <PageTitle text="PROJECTS"/>
               </div>
               <div>
                 <ProjectBoxList boxes={projectBoxes}/>

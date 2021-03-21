@@ -75,7 +75,7 @@ export default class Members extends React.Component
           <Header/>
         </div>
         <div>
-          <PageTitle text="Meet Our Members"/>
+          <PageTitle text="MEET OUR MEMBERS"/>
         </div>
         <div className='member-grid'>
           <MemberGrid memberBoxes = {boxes}/>
