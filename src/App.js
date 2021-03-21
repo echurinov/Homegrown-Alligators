@@ -12,8 +12,8 @@ function App() {
       <Social />
       <Navbar /> 
       <Switch>
-        <Route path='/' exact />
-        <Route path='/about' component={About} />
+        <Route path='/' exact /> 
+        <Route path='/about' component={About} /> 
       </Switch>
       </Router>
     </>
