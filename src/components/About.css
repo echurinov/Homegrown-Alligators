@@ -5,12 +5,11 @@
 }
 
 .about-heading {
-  font-size: 250%;
+  font-size: 300%;
   color: rgb(0, 82, 155);
-  display: block;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .about-body {
