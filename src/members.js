@@ -15,15 +15,17 @@ class MemberBox extends React.Component
         <div className='member-image'>
           <img src={this.props.imgPath} alt=""/>
         </div>
-        <div className='member-name'>
-          <p>
-            {this.props.name}
-          </p>
-        </div>
-        <div className='member-role'>
-          <p>
-            {this.props.role}
-          </p>
+        <div className='member-info'>
+          <div className='member-name'>
+            <p>
+              {this.props.name}
+            </p>
+          </div>
+          <div className='member-role'>
+            <p>
+              {this.props.role}
+            </p>
+          </div>
         </div>
       </div>
     );
