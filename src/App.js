@@ -10,10 +10,11 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/' component={Contact}/>
+        <Route path='/' exact/>
         <Route path='/about' component={About}/>
         <Route path='/members' component={Members}/>
         <Route path='/projects' component={Projects}/>
+        <Route path='/contact' component={Contact}/>
       </Switch>
     </Router>
   );
