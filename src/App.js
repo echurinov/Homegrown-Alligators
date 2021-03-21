@@ -1,22 +1,20 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/NavBar.js';
-import Social from './components/Social.js';
-import About from './components/About.js';
+import About from './About';
+import Members from './members';
+import Projects from './projects';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <>
     <Router>
-      <Social />
-      <Navbar /> 
       <Switch>
-        <Route path='/' exact />
-        <Route path='/about' component={About} />
+        <Route path='/' exact/>
+        <Route path='/about' component={About}/>
+        <Route path='/members' component={Members}/>
+        <Route path='/projects' component={Projects}/>
       </Switch>
-      </Router>
-    </>
+    </Router>
   );
 }
 

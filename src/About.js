@@ -1,15 +1,26 @@
 import React from "react";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import PageTitle from "./components/pageTitle";
+import gatorLogo from "./components/Images/Gators Logo.png";
+import calendar from "./components/Images/calendar.png"
 import "./About.css";
-import gatorLogo from "./Images/Gators Logo.png";
-import calendar from "./Images/calendar.png"
 
 function About() {
   return (
+    
     <div className="scroll">
-      <h1 className="about-heading">ABOUT US</h1>
+      <div>
+        <Header/>
+      </div>
+
+      <div>
+        <PageTitle text="ABOUT US"/>
+      </div>
+      
       
       <div className="about-body">
-        <img className="about-image" src={gatorLogo}/>
+        <img className="about-image" src={gatorLogo} alt=""/>
         <p className="about-description">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -20,9 +31,16 @@ function About() {
         </p>
       </div>
 
-      <h1 className="calendar-heading">CALENDAR</h1>
+      <div>
+        <PageTitle text="CALENDAR"/>
+      </div>
+      
 
-      <img className="calendar-temp-image" src={calendar}></img>
+      <img className="calendar-temp-image" src={calendar} alt=""/>
+
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 }

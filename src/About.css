@@ -4,14 +4,6 @@
   overflow-y: auto;
 }
 
-.about-heading {
-  font-size: 300%;
-  color: rgb(0, 82, 155);
-  text-align: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
 .about-body {
   display: flex;
   align-items: center;
@@ -39,15 +31,6 @@
   padding: 15px;
   border: 10px white solid;
   background: rgba(255, 255, 255, 0.3);
-}
-
-.calendar-heading {
-  display: block;
-  font-size: 250%;
-  color: rgb(0, 82, 155);
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
 }
 
 .calendar-temp-image {
