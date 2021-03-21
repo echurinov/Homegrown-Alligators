@@ -1,4 +1,8 @@
 .page-title {
-    margin-top:5em;
-    text-align:center;
-  }
+    font-size: 125%;
+    color: rgb(0, 82, 155);
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
