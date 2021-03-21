@@ -12,9 +12,12 @@ code {
     monospace;
 }
 
+.page {
+  background-color: rgb(219, 223, 209);
+}
+
 .member-grid {
   margin-bottom:5em;
-  background-color:black;
 }
 
 .member-grid-row {
@@ -23,7 +26,6 @@ code {
   justify-content:center;
   width:auto;
   height:fit-content;
-  background-color:white;
   padding:1em;
 }
 
