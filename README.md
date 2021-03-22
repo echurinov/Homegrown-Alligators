@@ -1,26 +1,70 @@
-# Introduction to Test Driven Development
-In this assignment we will build tests for a directory application. All code except the tests have been written for you.
-## Assignment
-Your objective is to write tests that assert the outputs from a server which provides listing data from a JSON file. To accomplish this, you will:
-- Use tests covered in discussion presentation to build informative tests
-- Start the server
-- Check that tests are running properly
+# Getting Started with Create React App
 
-We have provided skeleton code that will help guide you in completing this assignment. The server has already been written for you in server.js, you will write the tests in server.test.js
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The point of this assignment is to learn about tests and their relationship to functionality of your code. The only code you will need to write are the assertions and any code needed to move between tests.
-# Instructions: 
+## Available Scripts
 
-1. Make sure you have [Node.js](https://nodejs.org/en/) installed
-2. Download Zip file
-3. Install the mocha testing framework with the command `npm install -g mocha`
-4. Use `npm install` to download all necessary dependencies
-5. Start your server with `npm start` 
-6. Implement the tests by filling in code blocks found in server.test.js, then test your implementation with the command mocha server.test.js. (make sure your server is running before trying to run the tests!)
-7. Push code to your project GitHub and submit link to this assignment.
+In the project directory, you can run:
 
-Please push your code with tests to GitHub and submit the link.
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
