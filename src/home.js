@@ -8,7 +8,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function Home() {
     return (
-        <Router>
         <nav class="full">
             <div>
                 <Header />
@@ -24,7 +23,7 @@ function Home() {
             <PageTitle text = "Interested in Joining?" />
             <div class="info">
                 <h1>
-                    
+
                 </h1>
 
 
@@ -33,7 +32,6 @@ function Home() {
                 Click <a href = "https://www.google.com/?gws_rd=ssl" target="_blank">this link</a> to get some signup information.
             </div>
         </nav>
-        </Router>
     )
 }
 
