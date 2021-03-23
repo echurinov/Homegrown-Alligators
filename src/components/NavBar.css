@@ -14,10 +14,12 @@
 
 .navbar-menu{
     display: flex;
-    justify-content: space-around;
+    grid-column: span;
+    justify-content: grid;
     list-style: none;
     width:50%;
     color:white;
+    align-items: right;
 }
 
 .navbar-item{
@@ -52,6 +54,7 @@
     text-align: end;
     justify-content: end;
     margin-right: 1rem;
+    display: none;
 }
 
 .navbar-menu.active{

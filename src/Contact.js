@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import PageTitle from "./components/pageTitle";
 import Map from "./components/Images/Map.png";
-import Header from "./components/header";
 import Footer from "./components/footer";
 import "./Contact.css";
 
