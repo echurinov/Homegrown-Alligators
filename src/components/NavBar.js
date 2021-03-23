@@ -12,8 +12,8 @@ const Button = styled.button`
   color: white;
   font-size: 1rem;
   font: Helvetica;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.1rem;
+  padding-bottom: 2.1rem;
   width: 15rem;
   outline: none;
   border: none;
@@ -22,7 +22,7 @@ const Button = styled.button`
   transition: ease background-color 250ms;
   &:hover {
     background-color: rgb(0, 0, 0, 0.1);
-    border-bottom: 3px solid rgb(109, 54, 19);
+
   }
 `;
 
