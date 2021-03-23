@@ -10,6 +10,7 @@
   width: 100%;
   align-items: center;
   color: white;
+  text-decoration: none;
 }
 
 .navbar-menu {
@@ -47,6 +48,7 @@
   text-align: bottom;
   margin-top: 0.5rem;
   color: white;
+  text-decoration: none;
 }
 
 .navbar-menu-icon {

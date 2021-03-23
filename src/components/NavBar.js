@@ -12,8 +12,8 @@ const Button = styled.button`
   color: white;
   font-size: 1rem;
   font: Helvetica;
-  padding-top: 2.2rem;
-  padding-bottom: 1.9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 15rem;
   outline: none;
   border: none;
