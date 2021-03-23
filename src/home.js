@@ -23,6 +23,13 @@ function Home() {
             <img className="project-photo" src={stock1}></img>
             <PageTitle text = "Interested in Joining?" />
             <div class="info">
+                <h1>
+                    
+                </h1>
+
+
+
+
                 Click <a href = "https://www.google.com/?gws_rd=ssl" target="_blank">this link</a> to get some signup information.
             </div>
         </nav>
