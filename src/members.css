@@ -1,52 +1,53 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .page {
   background-color: rgb(219, 223, 209);
+  position: absolute;
 }
 
 .member-grid {
-  margin-bottom:5em;
+  margin-bottom: 5em;
 }
 
 .member-grid-row {
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  width:auto;
-  height:fit-content;
-  padding:1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: fit-content;
+  padding: 1em;
 }
 
 .member-box {
-  width:15%;
-  height:fit-content;
-  text-align:center;
-  margin-left:5%;
-  margin-right:5%;
+  width: 15%;
+  height: fit-content;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .member-image img {
-  width:100%;
-  max-height:auto;
+  width: 100%;
+  max-height: auto;
 }
 
 .member-info {
-  font-size:100%;
+  font-size: 100%;
 }
 
 .member-name {
-  font-size:110%;
-  font-weight:bold;
+  font-size: 110%;
+  font-weight: bold;
 }

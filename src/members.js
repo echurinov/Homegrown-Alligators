@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/header';
 import Footer from './components/footer';
 import PageTitle from './components/pageTitle';
 import './members.css';
@@ -71,9 +70,6 @@ export default class Members extends React.Component
     ];
     return (
       <div className='page'>
-        <div>
-          <Header/>
-        </div>
         <div>
           <PageTitle text="MEET OUR MEMBERS"/>
         </div>

@@ -28,9 +28,6 @@ const Button = styled.button`
 function Contact() {
   return (
     <div className="contact">
-      <div>
-        <Header/>
-      </div>
       <PageTitle text="CONTACT US"/>
       <div className="contact-content-contex">
         <li className="contact-content">

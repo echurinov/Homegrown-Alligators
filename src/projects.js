@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/header';
 import Footer from './components/footer';
 import PageTitle from './components/pageTitle';
 import './projects.css';
@@ -73,9 +72,6 @@ export default class Projects extends React.Component
 
         return (
             <div className="page">
-              <div>
-                <Header/>
-              </div>
               <div>
                 <PageTitle text="PROJECTS"/>
               </div>

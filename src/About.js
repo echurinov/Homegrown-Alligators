@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./components/header";
 import Footer from "./components/footer";
 import PageTitle from "./components/pageTitle";
 import gatorLogo from "./components/Images/Gators Logo.png";
@@ -10,9 +9,6 @@ function About() {
   return (
     
     <div className="scroll">
-      <div>
-        <Header/>
-      </div>
 
       <div>
         <PageTitle text="ABOUT US"/>
