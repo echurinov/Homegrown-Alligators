@@ -14,10 +14,10 @@ function Social() {
       <div classname="social-container">
         {/*The following part represents the top of the header, which has a blue background and contains all the social media links*/}
         <ul className="social-link">
-          <a href="https://www.facebook.com/groups/ufssdc/?ref=share">
+          <a href="https://www.facebook.com/groups/ufssdc/?ref=share" target="_blank">
             <img className="social-icon" src={facebook} alt=""/>
           </a>
-          <a href="https://www.instagram.com/ufssdc/">
+          <a href="https://www.instagram.com/ufssdc/" target="_blank">
             <img className="social-icon" src={instagram} alt=""/>
           </a>
         </ul>
