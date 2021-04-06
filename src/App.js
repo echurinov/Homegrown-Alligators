@@ -1,16 +1,15 @@
 import React from 'react';
 import './App.css';
-import home from './home';
-import About from './About';
-import Members from './members';
-import Projects from './projects';
-import Contact from './Contact';
+import home from './components/home';
+import About from './components/About';
+import Members from './components/members';
+import Projects from './components/projects';
+import Contact from './components/Contact';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-      <Header />
       <Switch>
         <Route path='/' exact component={home}/>
         <Route path='/about' component={About}/>

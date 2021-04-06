@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from './components/footer';
-import PageTitle from './components/pageTitle';
+import Footer from './footer';
+import PageTitle from './pageTitle';
 import './members.css';
 
 const address = "100 Farrior Hall at 205 Fletcher Drive, P.O. Box 112015, University of Florida, Gainesville, FL 32611-2015";
