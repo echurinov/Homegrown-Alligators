@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/header";
+import NavBar from "./components/NavBar.js";
+import Social from "./components/Social.js";
 import home from "./Pages/home";
 import About from "./Pages/About";
 import Members from "./Pages/members";
@@ -11,7 +12,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <Header />
+      <Social/>
+      <NavBar />
       <Switch>
         <Route path="/" exact component={home} />
         <Route path="/about" component={About} />
