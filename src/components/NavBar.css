@@ -4,22 +4,29 @@
   height: 5.5rem;
   top: 0;
   left: 0;
-  z-index: 999;
   justify-content: space-around;
-  position: relative;
   width: 100%;
   align-items: center;
   color: white;
   text-decoration: none;
+  padding-left: 2.1rem;
+  padding-right: 2.1rem;
 }
 
 .navbar-menu {
-  display: flex;
-  grid-column: span;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
   list-style: none;
-  width: 45%;
   color: white;
   align-items: right;
+}
+
+.navbar-section1{
+  width: 35%;
+}
+
+.navbar-section2{
+  width: 65%;
 }
 
 .navbar-item {
@@ -40,15 +47,17 @@
 }
 
 .navbar-logo-area {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  list-style: none;
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: lighter;
   justify-content: left;
   text-align: bottom;
-  margin-top: 0.5rem;
   color: white;
   text-decoration: none;
+  width: 20%;
 }
 
 .navbar-menu-icon {
