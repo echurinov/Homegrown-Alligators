@@ -13,6 +13,6 @@ a{
 }
 
 .Header{
-    position: sticky;
+    position: fixed;
 }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import stock1 from './Images/stock1.png';
 import "./home.css";
 import PageTitle from './pageTitle.js';
-import Header from './header.js'
 import Scroller from './Scroller.js'
 import Footer from './footer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -11,7 +10,6 @@ function Home() {
     return (
         <nav class="full">
             <div>
-                <Header />
                 <Scroller />
             </div>
          <PageTitle text = "Who We Are" />

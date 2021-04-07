@@ -1,67 +1,79 @@
 .navbar {
     display: flex;
-    background:rgb(216, 113, 50);
-    height: 5.05rem;
-    top: 0;
-    left: 0;
-    z-index: 999;
+    background: rgb(216, 113, 50);
+    height: 5.5rem;
     justify-content: space-around;
-    position: relative;
     width: 100%;
     align-items: center;
     color: white;
-}
-
-.navbar-menu{
-    display: flex;
-    justify-content: space-around;
+    text-decoration: none;
+    padding-left: 2.1rem;
+    padding-right: 2.1rem;
+    top: 2.75rem;
+  }
+  
+  .navbar-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
     list-style: none;
-    width:50%;
-    color:white;
-}
-
-.navbar-item{
+    color: white;
+    align-items: right;
+  }
+  
+  .navbar-section1{
+    width: 35%;
+  }
+  
+  .navbar-section2{
+    width: 65%;
+  }
+  
+  .navbar-item {
     letter-spacing: 2px;
     font-weight: bold;
     color: white;
     font-size: 1rem;
-}
-
-.navbar-item a{
+  }
+  
+  .navbar-item a {
     color: white;
-}
-
-.navbar-logo{
+  }
+  
+  .navbar-logo {
     justify-content: center;
     height: 3rem;
     margin-right: 1rem;
-}
-
-.navbar-logo-area{
-    display: flex;
+  }
+  
+  .navbar-logo-area {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    list-style: none;
     font-size: 2rem;
     letter-spacing: 1px;
     font-weight: lighter;
     justify-content: left;
     text-align: bottom;
-    margin-top: .50rem;
     color: white;
-}
-
-.navbar-menu-icon{
+    text-decoration: none;
+    width: 20%;
+  }
+  
+  .navbar-menu-icon {
     text-align: end;
     justify-content: end;
     margin-right: 1rem;
-}
-
-.navbar-menu.active{
+    display: none;
+  }
+  
+  .navbar-menu.active {
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
-}
-
-.navbar-icon{
+  }
+  
+  .navbar-icon {
     display: flex;
     grid-template-columns: repeat(2, auto);
     grid-gap: 10px;
@@ -70,4 +82,4 @@
     justify-content: end;
     margin-right: 1.75rem;
     height: 1.75rem;
-}
+  }
