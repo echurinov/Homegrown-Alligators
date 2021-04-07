@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-import logo from "./Images/logo.png";
+import logo from "../components/Images/logo.png";
 import styled from "styled-components";
 
 const Button = styled.button`
@@ -54,7 +54,7 @@ function NavBar() {
 
           <li className="navbar-item">
             <Link to="/members">
-              <Button>Our Members</Button>
+              <Button>Members</Button>
             </Link>
           </li>
 

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/header";
-import home from "./components/home";
-import About from "./components/About";
-import Members from "./components/members";
-import Projects from "./components/projects";
-import Contact from "./components/Contact";
+import home from "./Pages/home";
+import About from "./Pages/About";
+import Members from "./Pages/members";
+import Projects from "./Pages/projects";
+import Contact from "./Pages/Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
