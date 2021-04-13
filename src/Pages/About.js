@@ -1,8 +1,8 @@
 import React from "react";
-import Footer from "./footer";
-import PageTitle from "./pageTitle";
-import gatorLogo from "./Images/Gators Logo.png";
-import calendar from "./Images/calendar.png"
+import Footer from '../components/footer';
+import PageTitle from '../components/pageTitle';
+import gatorLogo from "../components/Images/Gators Logo.png";
+import calendar from "../components/Images/calendar.png"
 import "./About.css";
 
 function About() {

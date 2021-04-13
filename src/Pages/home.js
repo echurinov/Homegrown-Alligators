@@ -1,9 +1,9 @@
 import React from 'react';
-import stock1 from './Images/stock1.png';
+import stock1 from '../components/Images/stock1.png';
 import "./home.css";
-import PageTitle from './pageTitle.js';
-import Scroller from './Scroller.js'
-import Footer from './footer';
+import PageTitle from '../components/pageTitle';
+import Scroller from '../components/Scroller.js'
+import Footer from '../components/footer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function Home() {

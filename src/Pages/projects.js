@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from './footer';
-import PageTitle from './pageTitle';
+import Footer from '../components/footer';
+import PageTitle from '../components/pageTitle';
 import './projects.css';
 
 class ProjectBox extends React.Component

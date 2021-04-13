@@ -1,14 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Social.css";
-import facebook from "./Images/facebook.png";
-import instagram from "./Images/instagram.png";
-import logo from "./Images/logo.png";
+import facebook from "../components/Images/facebook.png";
+import instagram from "../components/Images/instagram.png";
 
 function Social() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMenu = () => setClick(false);
   return (
     <nav className="social">
       <div classname="social-container">
