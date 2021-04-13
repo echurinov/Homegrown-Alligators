@@ -1,10 +1,52 @@
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import styled from "styled-components";
-import PageTitle from "./pageTitle";
-import Map from "./Images/Map.png";
-import Header from "./header";
-import Footer from "./footer";
+import PageTitle from "../components/pageTitle";
+import Footer from "../components/footer";
 import "./Contact.css";
+import {
+  GoogleMap,
+  withScriptjs,
+  withGoogleMap,
+  Marker,
+  InfoWindow,
+} from "react-google-maps";
+
+function Map() {
+  const [selectRoom, setRoomSelected] = useState(null);
+
+  return (
+    <GoogleMap
+      defaultZoom={17}
+      defaultCenter={{ lat: 29.643577128424344, lng: -82.34854715201908 }}
+    >
+      <Marker
+        key={"Meeting Room"}
+        position={{
+          lat: 29.643577128424344,
+          lng: -82.34854715201908,
+        }}
+        onClick={() => {
+          setRoomSelected(true);
+        }}
+      />
+      {selectRoom && (
+        <InfoWindow
+          position={{
+            lat: 29.643577128424344,
+            lng: -82.34854715201908,
+          }}
+          onCloseClick={() => {
+            setRoomSelected(null);
+          }}
+        >
+          <div>Meeting Room</div>
+        </InfoWindow>
+      )}
+    </GoogleMap>
+  );
+}
+
+const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 const Button = styled.button`
   background: rgb(216, 113, 50);
@@ -28,8 +70,8 @@ const Button = styled.button`
 function Contact() {
   return (
     <div className="contact">
-      <PageTitle text="CONTACT US"/>
-      <div className="contact-content-contex">
+      <PageTitle text="CONTACT US" />
+      <ul className="contact-content-contex">
         <li className="contact-content">
           <div className="contact-body">
             <ul className="contact-description">
@@ -54,24 +96,35 @@ function Contact() {
                 </ul>
               </li>
             </ul>
+
             <div
               className="contact-description"
               style={{ border: 0, background: 0 }}
             >
               <Button>
-                <div className="contact-button" href="https://www.google.com/forms/about/">Apply</div>
+                <div
+                  className="contact-button"
+                  href="https://www.google.com/forms/about/"
+                >
+                  Apply
+                </div>
               </Button>
             </div>
           </div>
         </li>
         <li>
-          <div className="contact-image">
-            <img src={Map} />
+          <div className="map">
+            <WrappedMap
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKOz1BbUalx1VZnPioYn6kpRLmidpuXdY"
+              loadingElement={<div style={{ height: `100%` }} />}
+              containerElement={<div style={{ height: `100%` }} />}
+              mapElement={<div style={{ height: `100%` }} />}
+            />
           </div>
         </li>
-      </div>
+      </ul>
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
