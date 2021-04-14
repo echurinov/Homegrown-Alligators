@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+
+input, button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #53565A;
+}
+
+form {
+  display: block;
+  position: relative;
+}
+
+form .error {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+form:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: 1;
+  background-image: linear-gradient(to bottom right, #FF8000, #1F17FF);
+}
+
+form .form-inner {
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  padding: 60px;
+  z-index: 2;
+}
+
+form .form-inner h2 {
+  color: black;
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+form .form-inner .form-group {
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.form-inner .form-group label {
+  display: block;
+  color: #666;
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: 0.4px;
+}
+
+.form-inner .form-group:focus-within label {
+  color: #FF8000;
+}
+
+form .form-inner .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+form .form-inner .form-group input focus {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+form .form-inner input[type="submit"],.welcome button {
+  display: inline-block;
+  padding: 24px, 40px;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #FF8000 50%, #FF8000 50%, #1F17FF);
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form .form-inner input[type="submit"]:hover, .welcome button {
+  background-position: 100% 0%;
+}
+
+.welcome {
+  width: 100%;
+  max-width: 480px;
+  background-color: white;
+  padding: 30px 30px;
+}
+
+.welcome h2 {
+  color: black;
+  font-size: 56px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+i {
+  position: absolute;
+  top: 69%;
+  right: 18%;
+}
+
+i:hover {
+  color: grey;
+  cursor: pointer;
+}
