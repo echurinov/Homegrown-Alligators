@@ -1,51 +1,46 @@
-.App {
-  display: flex;
-  height: 52vh;
-  align-items: center;
-  background-color: rgb(219, 223, 209);
-}
-
-.main {
-  background-color: rgb(219, 223, 209);
-  overflow: hidden;
+.slider {
   position: relative;
-}
-
-.swiper {
+  height: 58vh;
   display: flex;
-  overflow-x: visible;
-  transition-property: transform;
-  will-change: transform;
-}
-
-img {
-  object-fit: contain;
-}
-
-.move {
-  display: flex;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
-  border: 0;
+  align-items: center;
 }
 
-.back {
-  left: 5px;
-}
-.next {
-  right: 5px;
+.image {
+  width: 1770px;
+  height: 500px;
+  border-radius: 0px;
 }
 
-.back:hover, .next:hover {
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  font-size: 3rem;
+  z-index: 10;
   cursor: pointer;
   color: black;
-  background-color: rgb(163, 163, 163, 0.8);
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  font-size: 3rem;
+  z-index: 10;
+  cursor: pointer;
+  color: black;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0.8;
+  transition-duration: 0s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1.2s;
+  transform: scale(1.08);
 }

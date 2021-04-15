@@ -12,9 +12,13 @@
     "moment-range": "^4.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
-    "web-vitals": "^1.1.1"
+    "styled-components": "^5.2.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.1.1",
+    "worker-rpc": "^0.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "chai": "^4.3.4"
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
   }
 }

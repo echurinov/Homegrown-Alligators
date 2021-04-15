@@ -1,6 +1,6 @@
 .social {
+    position: sticky;
     background: rgb(0, 82, 155);
-    position: relative;
     height: 2.75rem;
     width: 100%;
     top: 0;
