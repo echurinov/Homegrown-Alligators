@@ -75,7 +75,6 @@ function NavBar() {
               <Button>Calendar</Button>
             </Link>
           </li>
-
         </ul>
       </div>
     </nav>
