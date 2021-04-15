@@ -1,59 +1,67 @@
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-  
+
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .page {
-    background-color: rgb(219, 223, 209);
+  background-color: rgb(219, 223, 209);
+}
+
+.title-wrapper {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .project-box-list {
-    display:flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
 }
 
 .project-box {
-    display:flex;
-    align-items:top;
-    margin-bottom:5em;
-    width:60%;
-    height:fit-content;
-    margin-left:20%;
-    margin-right:20%;
+  display: flex;
+  align-items: top;
+  margin-bottom: 5em;
+  width: 60%;
+  height: fit-content;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .project-image img {
-    width:100%;
-    max-height:auto;
+  width: 100%;
+  max-height: auto;
 }
 
 .project-data {
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    text-align:left;
-    margin-left:5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5%;
 }
 
 .project-title {
-    font-size:200%;
-    color: rgb(0, 82, 155);
-    margin-bottom:1em;
+  font-size: 200%;
+  color: rgb(0, 82, 155);
+  margin-bottom: 1em;
 }
 
 .project-info {
-    word-wrap:break-word;
-    max-width:100%;
-    border: 10px white solid;
-    background: rgba(255, 255, 255, 0.3);
-    padding:1em;
-    font-size:130%;
+  word-wrap: break-word;
+  max-width: 100%;
+  border: 10px white solid;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1em;
+  font-size: 130%;
 }

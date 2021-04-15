@@ -1,38 +1,53 @@
 .full {
-    background-color: rgb(219, 223, 209);
+  background-color: rgb(219, 223, 209);
 }
 
 .title {
-    color: #000000;
-    height: 20vh;
-    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
-    font-size: 62px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  color: #000000;
+  height: 20vh;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  font-size: 62px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.title-wrapper {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.join-header {
+  color: white;
+  text-align: center;
+  font-size: 300%;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .info {
-    margin: auto;
-    width: 50%;
-    border: 3px;
-    padding: 20px 0px 50px 0px;
-    font-size: 28px;
+  margin: auto;
+  margin-top: 2em;
+  width: 50%;
+  border: 3px;
+  padding: 20px 0px 50px 0px;
+  font-size: 28px;
 }
 
 .project-photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
 }
 
 .looking {
-    font-size: 28px;
-    padding: 10px 0px 50px 0px;
+  font-size: 28px;
+  padding: 10px 0px 50px 0px;
 }
 
 a {
-    color: black;
-    text-decoration: underline;
+  color: black;
+  text-decoration: underline;
 }

@@ -4,6 +4,12 @@
   overflow-y: auto;
 }
 
+.title-wrapper {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 .contact-body {
   display: grid;
   flex-direction: column;
@@ -77,18 +83,17 @@
   .contact-description {
     margin: 0px;
   }
-  .contact-content{
+  .contact-content {
     display: grid;
     margin: 0;
   }
   .contact-content-contex {
     display: inline;
   }
-  .map{
-    margin:0;
+  .map {
+    margin: 0;
     width: 50vh;
     height: 50vh;
     margin-bottom: 40px;
   }
-
 }
