@@ -2,7 +2,8 @@ import React from 'react';
 import stock1 from '../components/Images/stock1.png';
 import "./home.css";
 import PageTitle from '../components/pageTitle';
-import Scroller from '../components/Scroller.js'
+import Scroller from '../components/Scroller.js';
+import { ScrollerData } from '../components/ScrollerData.js';
 import Footer from '../components/footer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -10,7 +11,7 @@ function Home() {
     return (
         <nav class="full">
             <div>
-                <Scroller />
+                <Scroller slides={ScrollerData}/>
             </div>
          <PageTitle text = "Who We Are" />
             <div class="info">
