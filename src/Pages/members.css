@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 code {
@@ -17,8 +20,15 @@ code {
   position: absolute;
 }
 
+.title-wrapper {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 .member-grid {
-  margin-bottom: 5em;
+  margin-top: 5em;
+  margin-bottom: 4em;
 }
 
 .member-grid-row {

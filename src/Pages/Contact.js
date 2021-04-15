@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import PageTitle from "../components/pageTitle";
 import Footer from "../components/footer";
+import space4 from '../components/Images/space4.png';
 import "./Contact.css";
 import {
   GoogleMap,
@@ -70,7 +71,12 @@ const Button = styled.button`
 function Contact() {
   return (
     <div className="contact">
-      <PageTitle text="CONTACT US" />
+
+      <div className="title-wrapper">
+        <img src={space4} alt=""/>
+        <PageTitle text="CONTACT US"/>
+      </div>
+
       <ul className="contact-content-contex">
         <li className="contact-content">
           <div className="contact-body">

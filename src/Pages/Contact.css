@@ -4,13 +4,19 @@
   overflow-y: auto;
 }
 
+.title-wrapper {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 .contact-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 80px;
+  margin-top: 1em;
+  margin-bottom: 2em;
   width: 65rem;
 }
 
@@ -38,31 +44,31 @@
 .contact-content-contex {
   display: flex;
   list-style: none;
-  margin-bottom: 50px;
+  margin-top: 5em;
 }
 
 .content-type {
-    font-style: bold;
-    font-size: 25px;
-    color: black; 
-    padding-top: 10px;
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+  padding-top: 10px;
 }
 
 .content-info {
-    display: inline;
-    font-size: 20px;
-    color: rgb(91, 113, 133); 
-    cursor: pointer;
-    padding-left: 20px;
-    list-style: none;
+  display: inline;
+  font-size: 20px;
+  color: rgb(91, 113, 133);
+  cursor: pointer;
+  padding-left: 20px;
+  list-style: none;
 }
 
 .contact-button {
-    font-size: 20px;
-    font-style: bold;
+  font-size: 20px;
+  font-style: bold;
 }
 
-.map{
+.map {
   position: relative;
   width: 75vh;
   height: 65vh;

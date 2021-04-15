@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../components/footer';
 import PageTitle from '../components/pageTitle';
+import space2 from '../components/Images/space2.png';
 import './members.css';
 
 const address = "100 Farrior Hall at 205 Fletcher Drive, P.O. Box 112015, University of Florida, Gainesville, FL 32611-2015";
@@ -70,9 +71,12 @@ export default class Members extends React.Component
     ];
     return (
       <div className='page'>
-        <div>
-          <PageTitle text="MEET OUR MEMBERS"/>
-        </div>
+
+      <div className="title-wrapper">
+        <img src={space2} alt=""/>
+        <PageTitle text="MEET OUR MEMBERS"/>
+      </div>
+
         <div className='member-grid'>
           <MemberGrid memberBoxes = {boxes}/>
         </div>
