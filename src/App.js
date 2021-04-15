@@ -5,6 +5,7 @@ import About from './About';
 import Members from './members';
 import Projects from './projects';
 import Contact from './Contact';
+import CalendarPage from './calendar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/members' component={Members}/>
         <Route path='/projects' component={Projects}/>
         <Route path='/contact' component={Contact}/>
+        <Route path='/calendar' component={CalendarPage}/>
       </Switch>
     </Router>
   );

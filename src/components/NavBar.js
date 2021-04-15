@@ -40,6 +40,10 @@ function NavBar() {
           <Link to="/contact">Contact Us</Link>
         </li>
 
+        <li className="navbar-item">
+          <Link to="/calendar">Calendar</Link>
+        </li>
+
       </ul>
     </nav>
   );
