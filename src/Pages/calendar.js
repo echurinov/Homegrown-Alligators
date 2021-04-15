@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import Dayz from "dayz";
 import moment from "moment";
-import PageTitle from "./components/pageTitle";
+import PageTitle from "../components/pageTitle";
 import "./calendar.css";
 
 const TODAY = new Date();

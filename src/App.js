@@ -5,7 +5,7 @@ import About from "./Pages/About";
 import Members from "./Pages/members";
 import Projects from "./Pages/projects";
 import Contact from "./Pages/Contact";
-import CalendarPage from "./calendar";
+import CalendarPage from "./Pages/calendar";
 import AdminLogin from "./Pages/AdminLogin";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
