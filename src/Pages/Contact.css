@@ -5,66 +5,90 @@
 }
 
 .contact-body {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 80px;
-  width: 65rem;
+  margin: 80px;
 }
 
 .contact-description {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 45%;
-
-  margin-bottom: 80px;
+  display: grid;
   vertical-align: middle;
   line-height: 1.5;
   padding: 15px;
   border: 10px white solid;
   background: rgba(255, 255, 255, 0.3);
   list-style: none;
+  margin-bottom: 80px;
 }
 
 .contact-content {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
 }
 
 .contact-content-contex {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   list-style: none;
-  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .content-type {
-    font-style: bold;
-    font-size: 25px;
-    color: black; 
-    padding-top: 10px;
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+  padding-top: 10px;
 }
 
 .content-info {
-    display: inline;
-    font-size: 20px;
-    color: rgb(91, 113, 133); 
-    cursor: pointer;
-    padding-left: 20px;
-    list-style: none;
+  display: inline;
+  font-size: 20px;
+  color: rgb(91, 113, 133);
+  cursor: pointer;
+  padding-left: 20px;
+  list-style: none;
 }
 
-.contact-button {
-    font-size: 20px;
-    font-style: bold;
-}
-
-.map{
+.map {
   position: relative;
-  width: 75vh;
-  height: 65vh;
+  width: 50rem;
+  height: 50rem;
   border: 10px white solid;
+  margin: 50px;
+}
+
+@media screen and (max-width: 1300px) {
+  .contact-content-contex {
+    grid-template-columns: repeat(1, auto);
+    margin: 0px;
+  }
+  .contact-body {
+    margin: 0;
+    margin-bottom: 0px;
+  }
+  .contact-description {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-description {
+    margin: 0px;
+  }
+  .contact-content{
+    display: grid;
+    margin: 0;
+  }
+  .contact-content-contex {
+    display: inline;
+  }
+  .map{
+    margin:0;
+    width: 50vh;
+    height: 50vh;
+    margin-bottom: 40px;
+  }
+
 }

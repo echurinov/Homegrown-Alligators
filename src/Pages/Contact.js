@@ -60,6 +60,7 @@ const Button = styled.button`
   padding: 2rem 4rem;
   outline: none;
   border: none;
+  width: 100%;
   text-transform: uppercase;
   cursor: pointer;
   transition: ease background-color 250ms;
@@ -103,18 +104,15 @@ function Contact() {
               className="contact-description"
               style={{ border: 0, background: 0 }}
             >
-              <Button>
-                <div
-                  className="contact-button"
-                  href="https://www.google.com/forms/about/"
-                >
+              <a href="https://www.google.com/forms/about/">
+                <Button>
                   Apply
-                </div>
-              </Button>
+                </Button>
+              </a>
             </div>
           </div>
         </li>
-        <li>
+        <li className="contact-content">
           <div className="map">
             <WrappedMap
               googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKOz1BbUalx1VZnPioYn6kpRLmidpuXdY"
