@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import PageTitle from "../components/pageTitle";
+import Header from "../components/header";
 import Footer from "../components/footer";
 import "./Contact.css";
 import {
@@ -70,6 +71,7 @@ const Button = styled.button`
 function Contact() {
   return (
     <div className="contact">
+      <Header />
       <PageTitle text="CONTACT US" />
       <ul className="contact-content-contex">
         <li className="contact-content">

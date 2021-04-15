@@ -5,11 +5,13 @@ import PageTitle from '../components/pageTitle';
 import Scroller from '../components/Scroller.js';
 import { ScrollerData } from '../components/ScrollerData.js';
 import Footer from '../components/footer';
+import Header from '../components/header';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function Home() {
     return (
         <nav class="full">
+            <Header/>
             <div>
                 <Scroller slides={ScrollerData}/>
             </div>
