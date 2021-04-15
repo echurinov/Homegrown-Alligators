@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import PageTitle from "../components/pageTitle";
 import gatorLogo from "../components/Images/Gators Logo.png";
+import space1 from '../components/Images/space1.png';
 import calendar from "../components/Images/calendar.png";
 import "./About.css";
 
@@ -10,7 +11,9 @@ function About() {
   return (
     <div className="scroll">
       <Header />
-      <div>
+
+      <div className="title-wrapper">
+        <img  src={space1} ></img>
         <PageTitle text="ABOUT US" />
       </div>
 
@@ -28,14 +31,9 @@ function About() {
       </div>
 
       <div>
-        <PageTitle text="CALENDAR" />
-      </div>
-
-      <img className="calendar-temp-image" src={calendar} alt="" />
-
-      <div>
         <Footer />
       </div>
+      
     </div>
   );
 }

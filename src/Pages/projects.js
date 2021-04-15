@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import PageTitle from "../components/pageTitle";
+import space3 from '../components/Images/space3.png';
 import "./projects.css";
 
 class ProjectBox extends React.Component {
@@ -98,9 +99,12 @@ export default class Projects extends React.Component {
     return (
       <div className="page">
         <Header />
-        <div>
+
+        <div className="title-wrapper">
+          <img  src={space3} ></img>
           <PageTitle text="PROJECTS" />
         </div>
+
         <div>
           <ProjectBoxList boxes={projectBoxes} />
         </div>

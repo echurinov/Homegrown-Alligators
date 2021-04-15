@@ -4,12 +4,18 @@
   overflow-y: auto;
 }
 
+.title-wrapper {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 .about-body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 80px;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .about-image {
@@ -31,12 +37,4 @@
   padding: 15px;
   border: 10px white solid;
   background: rgba(255, 255, 255, 0.3);
-}
-
-.calendar-temp-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  margin-bottom: 50px;
 }
