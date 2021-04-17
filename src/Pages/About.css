@@ -38,3 +38,38 @@
   border: 10px white solid;
   background: rgba(255, 255, 255, 0.3);
 }
+
+@media screen and (max-width: 1300px) {
+  .about-body {
+    display: grid;
+  }
+  .about-description{
+    justify-self:center;
+    margin: 0;
+    margin-top: 5%;
+    width: 75%;
+  }
+  .about-image {
+    justify-self:center;
+    margin: 0;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-body {
+    display: grid;
+  }
+  .about-description{
+    justify-self:center;
+    margin: 0;
+    margin-top: 5%;
+    width: 100%;
+  }
+  .about-image {
+    justify-self:center;
+    margin: 0;
+    width:100%;
+    height: auto;
+  }
+}
