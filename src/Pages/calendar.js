@@ -50,7 +50,7 @@ export default class CalendarPage extends React.Component {
 
         <div className="calendar">
           <div className="month-title">
-            <h1>{TODAY.toLocaleString("default", { month: "long" })}</h1>
+            <h2>{TODAY.toLocaleString("default", { month: "long" })}</h2>
           </div>
           <Dayz display="month" date={this.props.date} events={EVENTS} />
         </div>

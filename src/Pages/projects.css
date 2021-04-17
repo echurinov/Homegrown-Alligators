@@ -56,7 +56,7 @@ code {
 }
 
 .project-title {
-  font-size: 200%;
+  font-size: 2.5rem;
   color: rgb(255, 255, 255);
   margin-bottom: 1em;
   width: 100%;
@@ -69,7 +69,7 @@ code {
   word-wrap: break-word;
   max-width: 100%;
   border: 10px white solid;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   padding: 1em;
   font-size: 130%;
   justify-self: center;
