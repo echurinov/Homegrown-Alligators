@@ -13,7 +13,7 @@ code {
 }
 
 .page {
-  background-color: rgb(219, 223, 209);
+  background-color: rgb(38, 52, 65);
 }
 
 .title-wrapper {
@@ -53,7 +53,7 @@ code {
 
 .project-title {
   font-size: 200%;
-  color: rgb(0, 82, 155);
+  color: rgb(255, 255, 255);
   margin-bottom: 1em;
 }
 

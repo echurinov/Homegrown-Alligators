@@ -11,6 +11,7 @@
     padding-left: 2.1rem;
     padding-right: 2.1rem;
     top: 2.75rem;
+    border-bottom: 3px solid white;
   }
   
   .navbar-menu {
@@ -41,22 +42,25 @@
   }
   
   .navbar-logo {
-    justify-content: center;
     height: 3rem;
     margin-right: 1rem;
+    align-self: center;
   }
   
+  .navbar-logo-text{
+    align-self: center;
+  }
+
   .navbar-logo-area {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, auto);
+    height: 5.5rem;
     list-style: none;
     font-size: 2rem;
     letter-spacing: 1px;
     font-weight: lighter;
-    justify-content: left;
-    text-align: bottom;
+    justify-content: center;
     color: white;
-    text-decoration: none;
     width: 20%;
   }
   
@@ -83,4 +87,9 @@
     justify-content: end;
     margin-right: 1.75rem;
     height: 1.75rem;
+  }
+
+  a:hover, a:visited, a:link, a:active
+  {
+      text-decoration: none;
   }
