@@ -14,23 +14,23 @@
 
 .right-arrow {
   position: absolute;
-  top: 50%;
+  justify-self: center; 
   right: 3px;
   font-size: 3rem;
   z-index: 10;
   cursor: pointer;
-  color: black;
+  color: rgb(255, 255, 255, 0.5);
   user-select: none;
 }
 
 .left-arrow {
   position: absolute;
-  top: 50%;
+  justify-self: center;
   left: 3px;
   font-size: 3rem;
   z-index: 10;
   cursor: pointer;
-  color: black;
+  color: rgb(255, 255, 255, 0.5);
   user-select: none;
 }
 
@@ -41,6 +41,6 @@
 
 .slide.active {
   opacity: 1;
-  transition-duration: 1.2s;
+  transition-duration: 1.2s ease-in;
   transform: scale(1.08);
 }
