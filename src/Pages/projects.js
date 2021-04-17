@@ -2,24 +2,26 @@ import React from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import PageTitle from "../components/pageTitle";
-import space3 from '../components/Images/space3.png';
+import space3 from "../components/Images/space3.png";
 import "./projects.css";
 
 class ProjectBox extends React.Component {
   render() {
     return (
       <div className="project-box">
-        <div className="project-image">
-          <img src={this.props.imgPath} alt="" />
+        <div className="project-title">
+          <h2>{this.props.title}</h2>
         </div>
-        <div className="project-data">
-          <div className="project-title">
-            <h2>{this.props.title}</h2>
-          </div>
-          <div className="project-info">
-            <text>{this.props.info}</text>
-          </div>
-        </div>
+        <ul className="project-content">
+          <li className="project-image">
+            <img src={this.props.imgPath} alt="" />
+          </li>
+          <li className="project-data">
+            <div className="project-info">
+              <text>{this.props.info}</text>
+            </div>
+          </li>
+        </ul>
       </div>
     );
   }
@@ -101,7 +103,7 @@ export default class Projects extends React.Component {
         <Header />
 
         <div className="title-wrapper">
-          <img  src={space3} ></img>
+          <img src={space3}></img>
           <PageTitle text="PROJECTS" />
         </div>
 
