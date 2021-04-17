@@ -76,12 +76,15 @@
   }
   .contact-description {
     margin: 0px;
+    margin-top: 5%;
   }
 }
 
 @media screen and (max-width: 900px) {
   .contact-description {
     margin: 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .contact-content {
     display: grid;

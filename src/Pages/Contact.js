@@ -3,52 +3,8 @@ import styled from "styled-components";
 import PageTitle from "../components/pageTitle";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import space4 from '../components/Images/space4.png';
+import space4 from "../components/Images/space4.png";
 import "./Contact.css";
-import {
-  GoogleMap,
-  withScriptjs,
-  withGoogleMap,
-  Marker,
-  InfoWindow,
-} from "react-google-maps";
-
-function Map() {
-  const [selectRoom, setRoomSelected] = useState(null);
-
-  return (
-    <GoogleMap
-      defaultZoom={17}
-      defaultCenter={{ lat: 29.643577128424344, lng: -82.34854715201908 }}
-    >
-      <Marker
-        key={"Meeting Room"}
-        position={{
-          lat: 29.643577128424344,
-          lng: -82.34854715201908,
-        }}
-        onClick={() => {
-          setRoomSelected(true);
-        }}
-      />
-      {selectRoom && (
-        <InfoWindow
-          position={{
-            lat: 29.643577128424344,
-            lng: -82.34854715201908,
-          }}
-          onCloseClick={() => {
-            setRoomSelected(null);
-          }}
-        >
-          <div>Meeting Room</div>
-        </InfoWindow>
-      )}
-    </GoogleMap>
-  );
-}
-
-const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 const Button = styled.button`
   background: rgb(216, 113, 50);
@@ -76,7 +32,7 @@ function Contact() {
       <Header />
 
       <div className="title-wrapper">
-        <img  src={space4} ></img>
+        <img src={space4}></img>
         <PageTitle text="CONTACT US" />
       </div>
 
@@ -111,21 +67,27 @@ function Contact() {
               style={{ border: 0, background: 0 }}
             >
               <a href="https://www.google.com/forms/about/">
-                <Button>
-                  Apply
-                </Button>
+                <Button>Apply</Button>
               </a>
             </div>
           </div>
         </li>
         <li className="contact-content">
           <div className="map">
-            <WrappedMap
-              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKOz1BbUalx1VZnPioYn6kpRLmidpuXdY"
-              loadingElement={<div style={{ height: `100%` }} />}
-              containerElement={<div style={{ height: `100%` }} />}
-              mapElement={<div style={{ height: `100%` }} />}
-            />
+            <iframe
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?width=780&amp;height=780&amp;hl=en&amp;q=205%20Fletcher%20Drive%20Gainesville+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="780"
+              height="780"
+              frameborder="0"
+            ></iframe>{" "}
+            <script
+              type="text/javascript"
+              src="https://embedmaps.com/google-maps-authorization/script.js?id=0313eac3011105610c255d196a1b012132a12bbe"
+            ></script>
           </div>
         </li>
       </ul>
