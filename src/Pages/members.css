@@ -25,8 +25,8 @@ code {
 }
 
 .member-grid {
-  margin-top: 5em;
-  margin-bottom: 4em;
+  margin-top: 3em;
+  margin-bottom: 5em;
 }
 
 .member-grid-row {
@@ -49,13 +49,36 @@ code {
 .member-image img {
   width: 100%;
   max-height: auto;
+  margin-bottom:10%;
+  margin-top: 15%;
 }
 
 .member-info {
   font-size: 100%;
+  border:5px solid white;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5%;
 }
 
 .member-name {
   font-size: 110%;
   font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .member-name{
+    font-size:100%;
+  }
+  .member-info{
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .member-name{
+    font-size:90%;
+  }
+  .member-info{
+    font-size: 80%;
+  }
 }

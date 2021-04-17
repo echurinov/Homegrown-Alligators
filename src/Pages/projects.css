@@ -29,7 +29,7 @@ code {
 }
 
 .project-box {
-  display: flex;
+  display: grid;
   align-items: top;
   margin-bottom: 5em;
   width: 60%;
@@ -40,7 +40,11 @@ code {
 
 .project-image img {
   width: 100%;
+  max-width: 100%;
   max-height: auto;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-data {
@@ -55,6 +59,10 @@ code {
   font-size: 200%;
   color: rgb(255, 255, 255);
   margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 3%;
 }
 
 .project-info {
@@ -64,4 +72,17 @@ code {
   background: rgba(255, 255, 255, 0.3);
   padding: 1em;
   font-size: 130%;
+  justify-self: center;
+}
+
+.project-content {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .project-content {
+    display: grid;
+  }
 }

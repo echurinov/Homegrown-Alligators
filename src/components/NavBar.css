@@ -8,8 +8,6 @@
     align-items: center;
     color: white;
     text-decoration: none;
-    padding-left: 2.1rem;
-    padding-right: 2.1rem;
     top: 2.75rem;
     border-bottom: 3px solid white;
   }
@@ -92,4 +90,14 @@
   a:hover, a:visited, a:link, a:active
   {
       text-decoration: none;
+  }
+
+  @media screen and (max-width: 900px) {
+    .navbar-item{
+      display: grid;
+    }
+    .navbar-menu{
+      display: block;
+      
+    }
   }
