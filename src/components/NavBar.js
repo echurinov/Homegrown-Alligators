@@ -12,8 +12,31 @@ const Button = styled.button`
   color: white;
   font-size: 1rem;
   font: Helvetica;
-  height: 5.5rem;
+  height: 5.3rem;
   width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: ease background-color 250ms;
+  &:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgb(160, 98, 59);
+  }
+`;
+
+const Button2 = styled.button`
+  background: transparent;
+  text-decoration:none;
+  border-radius: 0x;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
+  font-size: 2.5rem;
+  font: Helvetica;
+  height: 5.3rem;
+  width: 50%;
   outline: none;
   border: none;
   text-transform: uppercase;
@@ -34,9 +57,11 @@ function NavBar() {
     <nav className="navbar">
       {/*This part represents the club logo*/}
       <div className="navbar-section1">
-        <Link to="/" className="navbar-logo-area">
-          <img className="navbar-logo" src={logo} alt="" />
-          <h4>SSDC</h4>
+        <Link to="/">
+          <Button2 className="navbar-logo-area">
+            <img className="navbar-logo" src={logo} alt="" />
+            <h4 className="navbar-logo-text">SSDC</h4>
+          </Button2>
         </Link>
       </div>
       {/*This part represents the links to the other pages*/}

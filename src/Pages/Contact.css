@@ -1,5 +1,5 @@
 .contact {
-  background-color: rgb(219, 223, 209);
+  background-color: rgb(38, 52, 65);
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -51,7 +51,7 @@
 .content-info {
   display: inline;
   font-size: 20px;
-  color: rgb(91, 113, 133);
+  color: rgb(39, 39, 44);
   cursor: pointer;
   padding-left: 20px;
   list-style: none;
