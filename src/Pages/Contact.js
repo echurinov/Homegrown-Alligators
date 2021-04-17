@@ -73,22 +73,21 @@ function Contact() {
           </div>
         </li>
         <li className="contact-content">
-          <div className="map">
-            <iframe
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?width=780&amp;height=780&amp;hl=en&amp;q=205%20Fletcher%20Drive%20Gainesville+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              width="780"
-              height="780"
-              frameborder="0"
-            ></iframe>{" "}
-            <script
-              type="text/javascript"
-              src="https://embedmaps.com/google-maps-authorization/script.js?id=0313eac3011105610c255d196a1b012132a12bbe"
-            ></script>
-          </div>
+          <iframe
+            className="map"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=780&amp;height=780&amp;hl=en&amp;q=205%20Fletcher%20Drive%20Gainesville+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            width="780"
+            height="780"
+            frameborder="0"
+          ></iframe>{" "}
+          <script
+            type="text/javascript"
+            src="https://embedmaps.com/google-maps-authorization/script.js?id=0313eac3011105610c255d196a1b012132a12bbe"
+          ></script>
         </li>
       </ul>
       <div>
