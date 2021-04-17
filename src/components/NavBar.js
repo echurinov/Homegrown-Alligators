@@ -36,7 +36,7 @@ const Button2 = styled.button`
   font-size: 2.5rem;
   font: Helvetica;
   height: 5.3rem;
-  width: 50%;
+  width: 100%;
   outline: none;
   border: none;
   text-transform: uppercase;
