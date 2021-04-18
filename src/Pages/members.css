@@ -16,6 +16,8 @@ code {
 .page {
   background-color: rgb(38, 52, 65);
   position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .title-wrapper {
