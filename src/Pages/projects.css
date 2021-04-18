@@ -56,6 +56,7 @@ code {
 }
 
 .project-title {
+  font-family: Josefin-Bold;
   font-size: 2.5rem;
   color: rgb(255, 255, 255);
   margin-bottom: 1em;
@@ -66,6 +67,7 @@ code {
 }
 
 .project-info {
+  font-family: Adventor;
   word-wrap: break-word;
   max-width: 100%;
   border: 10px white solid;
@@ -86,13 +88,13 @@ code {
     display: grid;
   }
 }
-@media screen and (max-width: 550px){
-  .project-box{
-    margin:0%;
-    padding:0%;
+@media screen and (max-width: 550px) {
+  .project-box {
+    margin: 0%;
+    padding: 0%;
     width: 100%;
   }
-  .project-data{
-    margin:0;
+  .project-data {
+    margin: 0;
   }
 }

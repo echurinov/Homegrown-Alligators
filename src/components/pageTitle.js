@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 import './pageTitle.css';
 
 export default class PageTitle extends React.Component

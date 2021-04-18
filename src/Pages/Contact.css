@@ -21,7 +21,7 @@
   display: grid;
   vertical-align: middle;
   line-height: 1.5;
-  padding: 15px;
+  padding: 20px;
   border: 10px white solid;
   background: rgba(255, 255, 255, 0.5);
   list-style: none;
@@ -42,18 +42,24 @@
 }
 
 .content-type {
+  font-family: Josefin-Bold;
   font-style: bold;
-  font-size: 25px;
+  font-size: 23px;
   color: black;
   padding-top: 10px;
 }
 
 .content-info {
+  font-family: Adventor;
   display: inline;
   font-size: 20px;
   color: rgb(39, 39, 44);
   padding-left: 20px;
   list-style: none;
+}
+
+.apply-text {
+  font-family: Adventor;
 }
 
 .map {

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 import stock1 from '../components/Images/stock1.png';
 import "./home.css";
 import PageTitle from '../components/pageTitle';
@@ -19,7 +20,7 @@ function Home() {
             </div>
 
             <div class="info">
-                The primary purpose of this organization is tosfacilitate the research, design, and development of space systems and related technology. 
+                The primary purpose of this organization is to facilitate the research, design, and development of space systems and related technology. 
                 These goals shall be achieved through creative and collaborative research methods while maintaining an encouraging and stimulating environment 
                 within the club and local community.
             </div>
