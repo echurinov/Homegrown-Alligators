@@ -16,6 +16,8 @@
   position: relative;
   text-align: center;
   color: white;
+  overflow: clip;
+
 }
 
 .join-header {

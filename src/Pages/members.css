@@ -22,6 +22,7 @@ code {
   position: relative;
   text-align: center;
   color: white;
+  overflow: clip;
 }
 
 .member-grid {
