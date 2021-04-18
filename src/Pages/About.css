@@ -8,7 +8,8 @@
   position: relative;
   text-align: center;
   color: white;
-  overflow: clip;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .about-body {

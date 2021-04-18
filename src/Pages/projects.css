@@ -23,6 +23,7 @@ code {
   text-align: center;
   max-width: 100%;
   color: white;
+  overflow-x: hidden;
 }
 
 .project-box-list {
