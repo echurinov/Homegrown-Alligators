@@ -28,7 +28,7 @@ const Button = styled.button`
 
 const Button2 = styled.button`
   background: transparent;
-  text-decoration:none;
+  text-decoration: none;
   border-radius: 0x;
   letter-spacing: 2px;
   font-weight: bold;
@@ -49,12 +49,15 @@ const Button2 = styled.button`
   }
 `;
 
-function NavBar() {
+const NavBar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const closeMenu = () => setClick(false);
+
   return (
     <nav className="navbar">
+      <div className="navbar-menu-icon" onClick={handleClick}>
+        <i className={click ? "fas fa-times fa-2x" : "fas fa-bars fa-2x"} />
+      </div>
       {/*This part represents the club logo*/}
       <div className="navbar-section1">
         <Link to="/">
@@ -66,11 +69,8 @@ function NavBar() {
       </div>
       {/*This part represents the links to the other pages*/}
       {/*Right below represents the icon appears when the screen gets small enough*/}
-      <div className="navbar-menu-icon" onClick={handleClick}>
-        <i className={click ? "fas fa-times" : "fas fa-bars"} />
-      </div>
       <div className="navbar-section2">
-        <ul className="navbar-menu">
+        <ul className={click ? 'navbar-menu active' : 'navbar-menu'}>
           <li className="navbar-item">
             <Link to="/about">
               <Button>About Us</Button>

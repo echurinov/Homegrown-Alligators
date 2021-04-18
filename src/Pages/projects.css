@@ -86,3 +86,13 @@ code {
     display: grid;
   }
 }
+@media screen and (max-width: 550px){
+  .project-box{
+    margin:0%;
+    padding:0%;
+    width: 100%;
+  }
+  .project-data{
+    margin:0;
+  }
+}
