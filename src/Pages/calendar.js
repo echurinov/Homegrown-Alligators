@@ -6,6 +6,8 @@ import moment from "moment";
 import PageTitle from "../components/pageTitle";
 import "./calendar.css";
 import space5 from '../components/Images/space5.png';
+import '../index.css';
+
 
 const TODAY = new Date();
 

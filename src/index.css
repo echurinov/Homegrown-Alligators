@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Adventor";
+  src: local("Adventor"),
+    url(./fonts/texgyreadventor-regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Josefin";
+  src: local("Josefin"), url(./fonts/JosefinSans-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Josefin-Bold";
+  src: local("Josefin-Bold"),
+    url(./fonts/JosefinSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: local("Dosis"), url(./fonts/Dosis-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Heart";
+  src: local("Heart"), url(./fonts/Always\ In\ My\ Heart.ttf) format("truetype");
+}

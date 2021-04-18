@@ -1,0 +1,16 @@
+.admin-projects
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.admin-projects .admin-projects-header
+{
+    text-align:center;
+}
+
+.admin-projects .admin-projects-tools
+{
+    display:flex;
+    flex-direction:row;
+}

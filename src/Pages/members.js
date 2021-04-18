@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import PageTitle from "../components/pageTitle";
 import Header from "../components/header";
 import "./members.css";
+import '../index.css';
 import space2 from '../components/Images/space2.png';
 
 const address =

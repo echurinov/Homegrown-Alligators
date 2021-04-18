@@ -4,6 +4,7 @@ import PageTitle from "../components/pageTitle";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import space4 from "../components/Images/space4.png";
+import '../index.css';
 import "./Contact.css";
 
 const Button = styled.button`
@@ -41,15 +42,15 @@ function Contact() {
           <div className="contact-body">
             <ul className="contact-description">
               <li>
-                <div className="content-type"> Email: </div>
+                <div className="content-type"> EMAIL: </div>
                 <div className="content-info">ufssdc@gmail.com</div>
               </li>
               <li>
-                <div className="content-type">Zoom: </div>{" "}
+                <div className="content-type">ZOOM: </div>{" "}
                 <div className="content-info">zoom.com</div>
               </li>
               <li>
-                <div className="content-type">Address: </div>
+                <div className="content-type">ADDRESS: </div>
                 <ul className="contact-content">
                   <li className="content-info">
                     100 Farrior Hall at 205 Fletcher Drive
@@ -67,7 +68,7 @@ function Contact() {
               style={{ border: 0, background: 0 }}
             >
               <a href="https://www.google.com/forms/about/">
-                <Button>Apply</Button>
+                <Button className="apply-text">Apply</Button>
               </a>
             </div>
           </div>

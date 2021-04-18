@@ -28,6 +28,7 @@
 }
 
 .about-description {
+  font-family: Adventor;
   display: inline;
   width: 45%;
   margin-right: 15%;
@@ -43,14 +44,14 @@
   .about-body {
     display: grid;
   }
-  .about-description{
-    justify-self:center;
+  .about-description {
+    justify-self: center;
     margin: 0;
     margin-top: 5%;
     width: 75%;
   }
   .about-image {
-    justify-self:center;
+    justify-self: center;
     margin: 0;
     width: 75%;
   }
@@ -60,16 +61,16 @@
   .about-body {
     display: grid;
   }
-  .about-description{
-    justify-self:center;
+  .about-description {
+    justify-self: center;
     margin: 0;
     margin-top: 5%;
     width: 100%;
   }
   .about-image {
-    justify-self:center;
+    justify-self: center;
     margin: 0;
-    width:100%;
+    width: 100%;
     height: auto;
   }
 }

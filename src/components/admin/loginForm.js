@@ -28,7 +28,7 @@ function LoginForm({ Login, error }) {
                         <label htmlFor="email">Email: </label>
                         <input type="email" name="email" id="email" onChange={e => setDetails({...details, email: e.target.value})} value={details.email} />
                     </div>
-                        <div className="form-group">
+                    <div className="form-group">
                         <label htmlFor="password">Password:</label>
                         <input type={passwordShown ? "text" : "password"} name="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
                         <i onClick={togglePasswordVisibility}>{eye}</i>
