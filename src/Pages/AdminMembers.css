@@ -1,0 +1,16 @@
+.admin-members
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.admin-members .admin-members-header
+{
+    text-align:center;
+}
+
+.admin-members .admin-members-tools
+{
+    display:flex;
+    flex-direction:row;
+}

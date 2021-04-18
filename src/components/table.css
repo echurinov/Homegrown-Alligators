@@ -1,0 +1,32 @@
+.table table
+{
+    width:100%;
+}
+
+.table table tr:nth-child(even)
+{
+    background-color:#eee;
+}
+
+.table table tr:nth-child(odd)
+{
+    background-color:#fff;
+}
+
+.table table th
+{
+    color:white;
+    background-color:royalblue;
+}
+
+.table th, td
+{
+    padding:0.5em;
+}
+
+.table table, th, td
+{
+    border: 0.1em solid black;
+    text-align:center;
+    border-collapse:collapse;
+}

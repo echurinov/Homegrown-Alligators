@@ -1,0 +1,47 @@
+.new-project-panel
+{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    max-height:80vh;
+    align-items:center;
+    background-color: white;
+    color:black;
+    border:0.1em black solid;
+    padding:2em;
+}
+
+.new-project-panel .new-project-panel-header
+{
+    margin-bottom:1em;
+}
+
+.new-project-panel .new-project-form form
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.new-project-panel .new-project-form label
+{
+    text-align:center;
+}
+
+.new-project-panel .new-project-form .input-text, .input-description, .input-image
+{
+    display:flex;
+    flex-direction:column;
+    margin:1em;
+    width:fit-content;
+}
+
+.new-project-panel .new-project-form .input-description textarea
+{
+    resize:vertical;
+}
+
+.new-project-panel .new-project-form .input-image input
+{
+    border: 0.1em black solid;
+}
