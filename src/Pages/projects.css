@@ -21,6 +21,7 @@ code {
 .title-wrapper {
   position: relative;
   text-align: center;
+  max-width: 100%;
   color: white;
 }
 
