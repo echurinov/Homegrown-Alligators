@@ -40,6 +40,10 @@
   color: white;
 }
 
+.button-text {
+  font-family: Josefin-Bold;
+}
+
 .navbar-logo {
   height: 3rem;
   margin-right: 1rem;
@@ -47,6 +51,7 @@
 }
 
 .navbar-logo-text {
+  font-family: Josefin-Bold;
   align-self: center;
 }
 
@@ -116,9 +121,8 @@ a:active {
     grid-template-columns: repeat(1, auto);
     display: none;
   }
-  .navbar-menu.active{
+  .navbar-menu.active {
     display: grid;
     border-bottom: 1px solid rgb(0, 0, 0, 0.1);
   }
-
 }

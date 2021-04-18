@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import logo from "../components/Images/logo.png";
+import '../index.css'
 import styled from "styled-components";
 
 const Button = styled.button`
@@ -73,31 +74,31 @@ const NavBar = () => {
         <ul className={click ? 'navbar-menu active' : 'navbar-menu'}>
           <li className="navbar-item">
             <Link to="/about">
-              <Button>About Us</Button>
+              <Button className="button-text">About Us</Button>
             </Link>
           </li>
 
           <li className="navbar-item">
             <Link to="/members">
-              <Button>Members</Button>
+              <Button className="button-text">Members</Button>
             </Link>
           </li>
 
           <li className="navbar-item">
             <Link to="/projects">
-              <Button>Projects</Button>
+              <Button className="button-text">Projects</Button>
             </Link>
           </li>
 
           <li className="navbar-item">
             <Link to="/contact">
-              <Button>Contact Us</Button>
+              <Button className="button-text">Contact Us</Button>
             </Link>
           </li>
 
           <li className="navbar-item">
             <Link to="/calendar">
-              <Button>Calendar</Button>
+              <Button className="button-text">Calendar</Button>
             </Link>
           </li>
         </ul>

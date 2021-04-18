@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import PageTitle from "../components/pageTitle";
 import space3 from "../components/Images/space3.png";
+import '../index.css';
 import "./projects.css";
 
 class ProjectBox extends React.Component {
@@ -56,44 +57,44 @@ export default class Projects extends React.Component {
     var projectBoxes = [
       <ProjectBox
         imgPath="gators.png"
-        title="Project 1"
+        title="PROJECT 1"
         info={testInfoShort}
       />,
-      <ProjectBox imgPath="gators.png" title="Project 2" info={testInfoLong} />,
+      <ProjectBox imgPath="gators.png" title="PROJECT 2" info={testInfoLong} />,
       <ProjectBox
         imgPath="gators.png"
-        title="Project 3"
-        info={testInfoShort}
-      />,
-      <ProjectBox
-        imgPath="gators.png"
-        title="Project 4"
+        title="PROJECT 3"
         info={testInfoShort}
       />,
       <ProjectBox
         imgPath="gators.png"
-        title="Project 5"
+        title="PROJECT 4"
+        info={testInfoShort}
+      />,
+      <ProjectBox
+        imgPath="gators.png"
+        title="PROJECT 5"
         info={testInfoShort}
       />,
       <ProjectBox imgPath="gators.png" title="Project 6" info={testInfoLong} />,
       <ProjectBox
         imgPath="gators.png"
-        title="Project 7"
+        title="PROJECT 7"
         info={testInfoShort}
       />,
       <ProjectBox
         imgPath="gators.png"
-        title="Project 8"
+        title="PROJECT 8"
         info={testInfoShort}
       />,
       <ProjectBox
         imgPath="gators.png"
-        title="Project 9"
+        title="PROJECT 9"
         info={testInfoShort}
       />,
       <ProjectBox
         imgPath="gators.png"
-        title="Project 10"
+        title="PROJECT 10"
         info={testInfoLong}
       />,
     ];

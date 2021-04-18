@@ -19,6 +19,7 @@
 }
 
 .join-header {
+  font-family: Adventor;
   color: white;
   text-align: center;
   font-size: 300%;
@@ -27,6 +28,8 @@
 }
 
 .info {
+  font-family: Adventor;
+  color: white;
   margin: auto;
   margin-top: 2em;
   width: 50%;
@@ -48,6 +51,6 @@
 }
 
 a {
-  color: black;
+  color: gray;
   text-decoration: underline;
 }

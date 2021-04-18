@@ -49,13 +49,14 @@ code {
 .member-image img {
   width: 100%;
   max-height: auto;
-  margin-bottom:10%;
+  margin-bottom: 10%;
   margin-top: 15%;
 }
 
 .member-info {
+  font-family: Adventor;
   font-size: 100%;
-  border:5px solid white;
+  border: 5px solid white;
   background: rgba(255, 255, 255, 0.5);
   padding: 5%;
 }
@@ -66,19 +67,19 @@ code {
 }
 
 @media screen and (max-width: 900px) {
-  .member-name{
-    font-size:100%;
+  .member-name {
+    font-size: 100%;
   }
-  .member-info{
+  .member-info {
     font-size: 90%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .member-name{
-    font-size:90%;
+  .member-name {
+    font-size: 90%;
   }
-  .member-info{
+  .member-info {
     font-size: 80%;
   }
 }
