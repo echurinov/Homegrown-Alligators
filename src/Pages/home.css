@@ -38,13 +38,17 @@
 
 .description {
   font-family: Adventor;
-  width: 50%;
+  width: 46%;
   margin: auto;
   padding-left: 2%;
   padding-right: 2%;
   vertical-align: middle;
   color: white;
   font-size: 28px;
+
+  padding: 20px;
+  border: 10px white solid;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .project-photo {
@@ -55,11 +59,15 @@
 
 .join-block {
   display: inline;
-  width: 50%;
+  width: 46%;
   padding-left: 5%;
   padding-right: 5%;
   margin: auto;
   text-align: left;
+
+  padding: 20px;
+  border: 10px white solid;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .join-header {
