@@ -53,7 +53,7 @@ function Home() {
                         </ul>
 
                         <div className="apply">
-                            Click <a href = "https://www.google.com/?gws_rd=ssl" target="_blank">HERE</a> for signup information.
+                            Click <a href="/contact" target="_blank">HERE</a> for signup information.
                         </div>
                     </div>
                 </div>

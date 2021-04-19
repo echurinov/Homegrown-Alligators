@@ -43,7 +43,7 @@
   padding-left: 2%;
   padding-right: 2%;
   vertical-align: middle;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 28px;
 
   padding: 20px;
@@ -55,6 +55,7 @@
   display: block;
   align-self: left;
   width: 50%;
+  border: 10px white solid;
 }
 
 .join-block {
@@ -73,7 +74,7 @@
 .join-header {
   display: block;
   font-family: Adventor;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 300%;
   margin-bottom: 1em;
 }
@@ -82,13 +83,13 @@
   display: block;
   font-family: Adventor;
   font-size: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 1em;
 }
 
 .looking {
   font-family: Adventor;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: left;
   font-size: 28px;
   list-style: inside;
@@ -97,11 +98,11 @@
 .apply {
   margin-top: 1em;
   font-size: 28px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 a {
-  color: gray;
+  color: rgb(38, 52, 65);
   text-decoration: underline;
 }
 
