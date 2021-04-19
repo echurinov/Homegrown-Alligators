@@ -32,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha server.test.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "client": "cd backend && npm start",
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "eslintConfig": {
     "extends": [

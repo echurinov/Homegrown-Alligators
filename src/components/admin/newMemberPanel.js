@@ -31,7 +31,8 @@ export default class NewMemberPanel extends React.Component
     {
         event.preventDefault();
 
-        alert("Member Name: " + this.state.name
+        alert("Member Successfully Added. "
+            + "Member Name: " + this.state.name
             + ", Position: " + this.state.position
             + ", Image Path: " + this.state.imagePath);
 

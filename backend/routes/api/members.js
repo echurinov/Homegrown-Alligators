@@ -18,8 +18,8 @@ router.get('/', (req, res) => {
     .catch(err => res.status(404).json({ nomembersfound: 'No Members found' }));
 });
 
-// @route GET api/books/:id
-// @description Get single book by id
+// @route GET api/members/:id
+// @description Get single member by id
 // @access Public
 router.get('/:id', (req, res) => {
   Member.findById(req.params.id)
@@ -27,8 +27,8 @@ router.get('/:id', (req, res) => {
     .catch(err => res.status(404).json({ nomemberfound: 'No Member found' }));
 });
 
-// @route GET api/books
-// @description add/save book
+// @route GET api/members
+// @description add/save member
 // @access Public
 router.post('/', (req, res) => {
   Member.create(req.body)
@@ -36,8 +36,8 @@ router.post('/', (req, res) => {
     .catch(err => res.status(400).json({ error: 'Unable to add this member' }));
 });
 
-// @route GET api/books/:id
-// @description Update book
+// @route GET api/mebers/:id
+// @description Update member
 // @access Public
 router.put('/:id', (req, res) => {
   Member.findByIdAndUpdate(req.params.id, req.body)
@@ -47,8 +47,8 @@ router.put('/:id', (req, res) => {
     );
 });
 
-// @route GET api/books/:id
-// @description Delete book by id
+// @route GET api/members/:id
+// @description Delete member by id
 // @access Public
 router.delete('/:id', (req, res) => {
   Member.findByIdAndRemove(req.params.id, req.body)

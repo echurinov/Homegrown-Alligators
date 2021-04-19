@@ -1,4 +1,8 @@
 {
-    "mongoURI":
-    "mongodb+srv://NicSantiago:lessgo@cluster0.z11sm.mongodb.net/sample_members?retryWrites=true&w=majority"
+    "membersURI":
+    "mongodb+srv://NicSantiago:lessgo@cluster0.z11sm.mongodb.net/members?retryWrites=true&w=majority",
+    "projectsURI":
+    "mongodb+srv://NicSantiago:lessgo@cluster0.z11sm.mongodb.net/Projects?retryWrites=true&w=majority",
+    "calendarURI":
+    "mongodb+srv://NicSantiago:lessgo@cluster0.z11sm.mongodb.net/calendar?retryWrites=true&w=majority"
   }
