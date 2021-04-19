@@ -10,13 +10,16 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "concurrently": "^6.0.2",
     "config": "^3.3.6",
     "dayz": "^2.9.0",
+    "express": "^4.17.1",
     "install": "^0.13.0",
     "mocha": "^8.3.2",
     "moment": "^2.29.1",
     "moment-range": "^4.0.2",
     "mongodb": "^3.6.6",
+    "mongoose": "^5.12.4",
     "npm": "^7.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -32,7 +35,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha server.test.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "client": "cd backend && npm start",
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "eslintConfig": {
     "extends": [
