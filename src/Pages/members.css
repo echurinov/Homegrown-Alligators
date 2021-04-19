@@ -81,20 +81,11 @@ code {
   font-weight: bold;
 }
 
-@media screen and (max-width: 900px) {
-  .member-name {
-    font-size: 100%;
-  }
-  .member-info {
-    font-size: 90%;
-  }
-}
-
 @media screen and (max-width: 500px) {
-  .member-name {
-    font-size: 90%;
+  .member-grid {
+    margin: 0;
   }
-  .member-info {
-    font-size: 80%;
+  .member-content{
+    margin: 0;
   }
 }
