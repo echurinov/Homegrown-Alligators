@@ -2,6 +2,7 @@ import React from "react";
 import AdminTablePanel from "./adminTablePanel";
 import NewMemberPanel from "./newMemberPanel";
 import "./adminMembersTool.css"
+import axios from 'axios';
 
 class MemberRow extends React.Component
 {
