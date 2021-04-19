@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "app": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "npm:undefined@*",
+    "config": "*",
+    "cors": "^2.8.5",
+    "express": "npm:undefined@*",
+    "mongoose": "npm:undefined@*",
+    "react-router-dom": "^5.2.0",
+    "validation": "npm:undefined@*"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
