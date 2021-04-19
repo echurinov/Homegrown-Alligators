@@ -1,0 +1,15 @@
+.admin-tools
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.admin-tools .admin-tools-header
+{
+    text-align:center;
+}
+
+.dropdown .dropdown-button
+{
+    width:100%;
+}

@@ -1,11 +1,22 @@
-.App {
+.admin
+{
+  height: 100vh;
+  background: #53565A;
+}
+
+.admin .login-form
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: montserrat, sans-serif;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #53565A;
+  height:100vh;
+}
+
+.admin .welcome
+{
+  color:white;
 }

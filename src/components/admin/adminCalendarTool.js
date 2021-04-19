@@ -1,8 +1,8 @@
 import React from "react";
-import NewEventPanel from "../components/admin/newEventPanel";
-import CALENDAR_EVENTS from "../components/calendarEvents";
-import AdminTablePanel from "../components/admin/adminTablePanel";
-import "./AdminCalendar.css"
+import NewEventPanel from "./newEventPanel";
+import AdminTablePanel from "./adminTablePanel";
+import CALENDAR_EVENTS from "../calendarEvents";
+import "./adminCalendarTool.css"
 
 class CalendarEventRow extends React.Component
 {
@@ -19,7 +19,7 @@ class CalendarEventRow extends React.Component
     }
 }
 
-export default class AdminCalendar extends React.Component
+export default class AdminCalendarTool extends React.Component
 {
     getTableRows()
     {
@@ -52,17 +52,12 @@ export default class AdminCalendar extends React.Component
     render()
     {
         return (
-            <div className="admin-calendar">
-                <div className="admin-calendar-header">
-                    <h1>Admin Calendar Tool</h1>
-                </div>
-                <div className="admin-calendar-tools">
-                    <AdminTablePanel
-                        headerText="Calendar Events"
-                        tableRows={this.getTableRows()}
-                    />
-                    <NewEventPanel/>
-                </div>
+            <div className="admin-calendar-tool">
+                <AdminTablePanel
+                    headerText="Calendar Events"
+                    tableRows={this.getTableRows()}
+                />
+                <NewEventPanel/>
             </div>
         );
     }
