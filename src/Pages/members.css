@@ -29,20 +29,16 @@ code {
 }
 
 .member-grid {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
   margin-top: 3em;
   margin-bottom: 5em;
 }
 
-.member-grid-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: auto;
-  height: fit-content;
-  padding: 1em;
-}
-
 .member-box {
+  display:flex;
+  flex-direction:column;
   width: 15%;
   height: fit-content;
   text-align: center;
@@ -58,6 +54,10 @@ code {
 }
 
 .member-info {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  height:7em;
   font-family: Adventor;
   font-size: 100%;
   border: 5px solid white;

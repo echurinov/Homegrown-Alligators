@@ -6,8 +6,34 @@ import "./members.css";
 import '../index.css';
 import space2 from '../components/Images/space2.png';
 
-const address =
-  "100 Farrior Hall at 205 Fletcher Drive, P.O. Box 112015, University of Florida, Gainesville, FL 32611-2015";
+class Member extends React.Component
+{
+  constructor(props)
+  {
+    super(props)
+
+    this.state = {
+      name:this.props.name,
+      position:this.props.position
+    }
+  }
+}
+
+const members = [
+  <Member name="Tom Clubman"        position="President"/>,
+  <Member name="Berry Buildabear"   position="Vice President"/>,
+  <Member name="Publix Supermarket" position="Treasurer"/>,
+  <Member name="Bippity"            position="Bank Robber"/>,
+  <Member name="Boppity"            position="Bank Robber's Assistant"/>,
+  <Member name="Boo"                position="Bank Robber's Assistant's Assistant"/>,
+  <Member name="Shoe"               position="Closet Dweller"/>,
+  <Member name="Mr. White"          position="Chemistry Teacher"/>,
+  <Member name="Jesse"              position="Chemistry Teacher's Student"/>,
+  <Member name="Saul"               position="Chemistry Teacher's Lawyer"/>,
+  <Member name="Gus"                position="Chemistry Teacher's Employer"/>,
+  <Member name="Best Buy"           position="Technology Store"/>,
+  <Member name="Target"             position="Supermarket"/>,
+]
 
 class MemberBox extends React.Component {
   render() {
@@ -29,39 +55,21 @@ class MemberBox extends React.Component {
   }
 }
 
-class MemberGrid extends React.Component {
-  render() {
-    return (
-      <div>
-        <div className="member-grid-row">
-          {this.props.memberBoxes[0]}
-          {this.props.memberBoxes[1]}
-          {this.props.memberBoxes[2]}
-          {this.props.memberBoxes[3]}
-        </div>
-        <div className="member-grid-row">
-          {this.props.memberBoxes[4]}
-          {this.props.memberBoxes[5]}
-          {this.props.memberBoxes[6]}
-          {this.props.memberBoxes[7]}
-        </div>
-      </div>
-    );
-  }
-}
-
 export default class Members extends React.Component {
+  renderMemberBoxes()
+  {
+    let memberBoxes = [];
+
+    for(var i = 0; i < members.length; i++)
+    {
+      memberBoxes.push(<MemberBox name={members[i].props.name} role={members[i].props.position} imgPath="gators.png"/>);
+    }
+
+    return memberBoxes;
+  }
+  
   render() {
-    var boxes = [
-      <MemberBox name="Member 1 Name" imgPath="gators.png" role="Role" />,
-      <MemberBox name="Member 2 Name" imgPath="gators.png" role="Role" />,
-      <MemberBox name="Member 3 Name" imgPath="gators.png" role="Role" />,
-      <MemberBox name="Member 4 Name" imgPath="gators.png" role="Role" />,
-      <MemberBox name="Member 5 Name" imgPath="gators.png" role="Role" />,
-      <MemberBox name="Member 6 Name" imgPath="gators.png" role="Role" />,
-      <MemberBox name="Member 7 Name" imgPath="gators.png" role="Role" />,
-      <MemberBox name="Member 8 Name" imgPath="gators.png" role="Role" />,
-    ];
+
     return (
       <div className="page">
         <Header />
@@ -72,7 +80,7 @@ export default class Members extends React.Component {
         </div>
 
         <div className="member-grid">
-          <MemberGrid memberBoxes={boxes} />
+          {this.renderMemberBoxes()}
         </div>
         <div>
           <Footer />

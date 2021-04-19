@@ -26,12 +26,6 @@ code {
   overflow-x: hidden;
 }
 
-.project-box-list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5em;
-}
-
 .project-box {
   display: grid;
   align-items: top;
