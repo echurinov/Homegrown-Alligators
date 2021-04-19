@@ -34,16 +34,27 @@ code {
   flex-wrap:wrap;
   margin-top: 3em;
   margin-bottom: 5em;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.member-content{
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 .member-box {
+  position: relative;
   display:flex;
   flex-direction:column;
-  width: 15%;
+  width: 25rem;
+  min-width: 2rem;
   height: fit-content;
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
 }
 
 .member-image img {
