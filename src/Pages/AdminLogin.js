@@ -1,5 +1,6 @@
 import react, { useState } from "react";
 import LoginForm from "../components/admin/loginForm";
+import AdminTools from "../components/admin/adminTools";
 import "./AdminLogin.css";
 
 function AdminLogin() {
@@ -34,14 +35,17 @@ function AdminLogin() {
   };
 
   return (
-    <div className="App">
+    <div className="admin">
       {user.email != "" ? (
         <div className="welcome">
           <h2>Welcome</h2>
           <button onClick={Logout}>Logout</button>
+          <AdminTools/>
         </div>
       ) : (
-        <LoginForm Login={Login} error={error} />
+        <div className="login-form">
+          <LoginForm Login={Login} error={error} />
+        </div>
       )}
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
-import AdminTablePanel from "../components/admin/adminTablePanel";
-import NewMemberPanel from "../components/admin/newMemberPanel";
-import "./AdminMembers.css"
+import AdminTablePanel from "./adminTablePanel";
+import NewMemberPanel from "./newMemberPanel";
+import "./adminMembersTool.css"
 
 class MemberRow extends React.Component
 {
@@ -45,17 +45,12 @@ export default class AdminMembers extends React.Component
     render()
     {
         return (
-            <div className="admin-members">
-                <div className="admin-members-header">
-                    <h1>Admin Members Tool</h1>
-                </div>
-                <div className="admin-members-tools">
-                    <AdminTablePanel
-                        headerText="Members"
-                        tableRows={this.getTableRows()}
-                    />
-                    <NewMemberPanel/>
-                </div>
+            <div className="admin-members-tool">
+                <AdminTablePanel
+                    headerText="Members"
+                    tableRows={this.getTableRows()}
+                />
+                <NewMemberPanel/>
             </div>
         );
     }

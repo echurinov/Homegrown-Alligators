@@ -1,7 +1,7 @@
 import React from "react";
-import AdminTablePanel from "../components/admin/adminTablePanel";
-import NewProjectPanel from "../components/admin/newProjectPanel";
-import "./AdminProjects.css"
+import AdminTablePanel from "./adminTablePanel";
+import NewProjectPanel from "./newProjectPanel";
+import "./adminProjectsTool.css"
 
 class ProjectRow extends React.Component
 {
@@ -42,17 +42,12 @@ export default class AdminProjects extends React.Component
     render()
     {
         return (
-            <div className="admin-projects">
-                <div className="admin-projects-header">
-                    <h1>Admin Projects Tool</h1>
-                </div>
-                <div className="admin-projects-tools">
-                    <AdminTablePanel
-                        headerText="Projects"
-                        tableRows={this.getTableRows()}
-                    />
-                    <NewProjectPanel/>
-                </div>
+            <div className="admin-projects-tool">
+                <AdminTablePanel
+                    headerText="Projects"
+                    tableRows={this.getTableRows()}
+                />
+                <NewProjectPanel/>
             </div>
         );
     }
