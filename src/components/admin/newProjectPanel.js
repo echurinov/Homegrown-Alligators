@@ -44,8 +44,9 @@ export default class NewProjectPanel extends React.Component
         .post('http://localhost:8082/api/project/add', project)
         .then(res => {
             this.setState({
-            name: '',
-            position: ''
+            title: '',
+            description: '',
+            imagePath:""
             })
             this.props.history.push('/admin');
         })

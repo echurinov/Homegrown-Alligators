@@ -59,7 +59,7 @@ export default class NewEventPanel extends React.Component
             this.props.history.push('/admin');
         })
         .catch(err => {
-            console.log("Error in NewProjectPanel!");
+            console.log("Error in NewEventPanel!");
         })
     }
 
