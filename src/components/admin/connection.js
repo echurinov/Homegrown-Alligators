@@ -16,7 +16,7 @@ async function main() {
         //Example insert Member of name "Jacob" and role "President"
         await insertMember(client, {
             name:"Jacob",
-            role: "President"
+            role:"President"
         });
     } catch (e) {
         console.error(e);

@@ -24,35 +24,31 @@ export default class NewMemberPanel extends React.Component
         const value = target.value;
         const name = target.name;
 
-        this.setState({ [event.target.name]: event.target.value });
+        this.setState({ [name]: value });
     }
 
     handleSubmit(event)
     {
         event.preventDefault();
 
-        alert("Member Successfully Added. "
-            + "Member Name: " + this.state.name
-            + ", Position: " + this.state.position
-            + ", Image Path: " + this.state.imagePath);
-
         const member = {
             name: this.state.name,
             position: this.state.position
         };
 
-        axios
-        .post('http://localhost:8082/api/member/add', member)
-        .then(res => {
-            this.setState({
-            name: '',
-            position: ''
-            })
-            this.props.history.push('/admin');
+        const req = axios.post('http://localhost:8082/api/member/add', member)
+            .then(res => {
+                this.setState({
+                    name: '',
+                    position: ''
+                })
+            //this.props.history.push('/admin');
         })
         .catch(err => {
-            console.log("Error in NewMemberPanel!");
+            console.log(err);
         })
+
+        req.then(this.props.updateMemberList);
     }
 
     render() {
