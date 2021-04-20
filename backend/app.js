@@ -6,16 +6,17 @@
 // In server
 // axios react-router-dom
 
-
 const express = require('express');
 const connectDB = require('./config/db');
 var cors = require('cors');
 
-const members = require('./routes/api/members');
+const member = require('./routes/api/member');
+const project = require('./routes/api/project');
+const calendar = require('./routes/api/calendar');
 
 const app = express();
 
-// Connect Database
+// Connect Databases
 connectDB();
 
 // cors
@@ -27,7 +28,9 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('Hello world!'));
 
 // use Routes
-app.use('/api/members', members);
+app.use('/api/member', member);
+app.use('/api/project', project);
+app.use('/api/calendar', calendar);
 
 const port = process.env.PORT || 8082;
 
