@@ -6,7 +6,7 @@ const Member = require('../../models/Member');
 
 router.route('/').get((req, res) => {
   Member.find()
-    .then(memberss => res.json(members))
+    .then(members => res.json(members))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
