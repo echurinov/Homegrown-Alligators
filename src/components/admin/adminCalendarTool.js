@@ -93,8 +93,8 @@ export default class AdminCalendarTool extends React.Component
                 <CalendarEventRow
                     id={this.state.events[i]._id}
                     title={this.state.events[i].title}
-                    startDate={moment(this.state.events[i].startDate).format("MM/DD/YYYY")}
-                    endDate={moment(this.state.events[i].endDate).format("MM/DD/YYYY")}
+                    startDate={moment(this.state.events[i].startDate).utc().format("MM/DD/YYYY")}
+                    endDate={moment(this.state.events[i].endDate).utc().format("MM/DD/YYYY")}
                     colorIndex={this.state.events[i].colorIndex}
                     updateEventList={this.updateEventList}
                 />
