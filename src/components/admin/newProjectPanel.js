@@ -1,5 +1,6 @@
 import React from "react";
 import "./newProjectPanel.css"
+import axios from 'axios';
 
 export default class NewProjectPanel extends React.Component
 {
@@ -33,6 +34,24 @@ export default class NewProjectPanel extends React.Component
         alert("Title: " + this.state.title
             + ", Description: " + this.state.description
             + ", Image: " + this.state.imagePath);
+
+        const project = {
+            title: this.state.title,
+            description: this.state.description
+        }
+
+        axios
+        .post('http://localhost:8082/api/project/add', project)
+        .then(res => {
+            this.setState({
+            name: '',
+            position: ''
+            })
+            this.props.history.push('/admin');
+        })
+        .catch(err => {
+            console.log("Error in NewProjectPanel!");
+        })
     }
 
     render() {

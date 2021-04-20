@@ -36,13 +36,13 @@ export default class NewMemberPanel extends React.Component
             + ", Position: " + this.state.position
             + ", Image Path: " + this.state.imagePath);
 
-        const data = {
+        const member = {
             name: this.state.name,
             position: this.state.position
         };
 
         axios
-        .post('http://localhost:8082/api/members', data)
+        .post('http://localhost:8082/api/member/add', member)
         .then(res => {
             this.setState({
             name: '',

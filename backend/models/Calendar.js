@@ -3,7 +3,7 @@
 
 const mongoose = require('mongoose');
 
-const CalendarEventSchema = new mongoose.Schema({
+const CalendarSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true
@@ -16,10 +16,10 @@ const CalendarEventSchema = new mongoose.Schema({
     type: Date,
     required: true
   },
-  color: {
+  colorIndex: {
     type: Number,
     required: true
   }
 });
 
-module.exports = CalendarEvent = mongoose.model('calendar event', CalendarEventSchema);
+module.exports = Calendar = mongoose.model('calendar', CalendarSchema);

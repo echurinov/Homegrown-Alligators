@@ -1,6 +1,7 @@
 import moment from "moment";
 import React from "react";
 import "./newEventPanel.css"
+import axios from 'axios';
 
 const TODAY = new Date();
 
@@ -38,6 +39,28 @@ export default class NewEventPanel extends React.Component
             + ", Start Date: " + this.state.startDate
             + ", End Date: " + this.state.endDate
             + ", Color Index: " + this.state.colorIndex);
+
+        const calendarEvent = {
+            title: this.state.title,
+            startDate: this.state.startDate,
+            endDate: this.state.endDate,
+            colorIndex: this.state.colorIndex
+        }
+
+        axios
+        .post('http://localhost:8082/api/calendar/add', calendarEvent)
+        .then(res => {
+            this.setState({
+                title: '',
+                startDate: '',
+                endDate: '',
+                colorIndex: ''
+            })
+            this.props.history.push('/admin');
+        })
+        .catch(err => {
+            console.log("Error in NewProjectPanel!");
+        })
     }
 
     render() {
