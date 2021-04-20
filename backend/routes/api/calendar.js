@@ -12,9 +12,9 @@ router.route('/').get((req, res) => {
 
 router.route('/add').post((req, res) => {
   const title = req.body.title;
-  const startDate = req.body.startData;
-  const endDate = req.body.endData;
-  const colorIndex = req.body.color;
+  const startDate = req.body.startDate;
+  const endDate = req.body.endDate;
+  const colorIndex = req.body.colorIndex;
 
   const newCalendar = new Calendar({title, startDate, endDate, colorIndex});
 

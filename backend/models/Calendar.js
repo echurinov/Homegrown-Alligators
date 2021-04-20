@@ -8,11 +8,11 @@ const CalendarSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  startData: {
+  startDate: {
     type: Date,
     required: true
   },
-  endData: {
+  endDate: {
     type: Date,
     required: true
   },
