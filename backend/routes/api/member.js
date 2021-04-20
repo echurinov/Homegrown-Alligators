@@ -30,7 +30,7 @@ router.route('/:id').get((req, res) => {
 router.route('/:id').delete((req, res) => {
   Member.findByIdAndDelete(req.params.id)
     .then(() => res.json('Member deleted.'))
-    .catch(err => res.status(400).json('Error: ' + err));
+      .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/update/:id').post((req, res) => {
