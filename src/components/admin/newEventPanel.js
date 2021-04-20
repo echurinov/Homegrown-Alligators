@@ -13,8 +13,8 @@ export default class NewEventPanel extends React.Component
 
         this.state = {
             title:"Input Event Title...",
-            startDate:moment(TODAY).format("YYYY-MM-DD"),
-            endDate:moment(TODAY).format("YYYY-MM-DD"),
+            startDate:moment(TODAY).utc().format("YYYY-MM-DD"),
+            endDate:moment(TODAY).utc().format("YYYY-MM-DD"),
             colorIndex:1
         }
 
@@ -37,8 +37,8 @@ export default class NewEventPanel extends React.Component
 
         const calendarEvent = {
             title: this.state.title,
-            startDate: this.state.startDate,
-            endDate: this.state.endDate,
+            startDate: moment(this.state.startDate).utc(),
+            endDate: moment(this.state.endDate).utc(),
             colorIndex: this.state.colorIndex
         }
 
