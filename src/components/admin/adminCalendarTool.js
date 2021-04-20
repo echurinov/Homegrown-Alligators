@@ -1,11 +1,30 @@
 import React from "react";
 import NewEventPanel from "./newEventPanel";
 import AdminTablePanel from "./adminTablePanel";
-import CALENDAR_EVENTS from "../calendarEvents";
+import axios from "axios";
+import moment from "moment";
 import "./adminCalendarTool.css"
 
 class CalendarEventRow extends React.Component
 {
+    constructor(props)
+    {
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick()
+    {
+        const req = axios.delete('http://localhost:8082/api/calendar/' + this.props.id, {params:{id:this.props.id}})
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            });
+
+        req.then(this.props.updateEventList);
+    }
+
     render()
     {
         return (
@@ -14,6 +33,11 @@ class CalendarEventRow extends React.Component
                 <td>{this.props.startDate}</td>
                 <td>{this.props.endDate}</td>
                 <td>{this.props.colorIndex}</td>
+                <td>
+                    <button onClick={this.handleClick}>
+                        Delete
+                    </button>
+                </td>
             </tr>
         );
     }
@@ -21,7 +45,35 @@ class CalendarEventRow extends React.Component
 
 export default class AdminCalendarTool extends React.Component
 {
-    getTableRows()
+    constructor(props)
+    {
+        super(props);
+
+        this.state = {
+            events:[],
+            tableRows:[]
+        }
+
+        this.updateEventList = this.updateEventList.bind(this);
+    }
+
+    componentDidMount()
+    {
+        this.updateEventList();
+    }
+
+    updateEventList()
+    {
+        const req = axios.get('http://localhost:8082/api/calendar/');
+        
+        req.then(res => {
+            const events = res.data;
+            this.setState({events:events});
+            this.setState({tableRows:this.constructTableRows()});
+        });
+    }
+
+    constructTableRows()
     {
         let tableRows = [];
 
@@ -31,17 +83,20 @@ export default class AdminCalendarTool extends React.Component
                 <th>Start Date</th>
                 <th>End Date</th>
                 <th>Color Index</th>
+                <th>Options</th>
             </tr>
         );
 
-        for(var i = 0; i < CALENDAR_EVENTS.length; i++)
+        for(var i = 0; i < this.state.events.length; i++)
         {
             tableRows.push(
                 <CalendarEventRow
-                    title={CALENDAR_EVENTS.events[i].content}
-                    startDate={CALENDAR_EVENTS.events[i].start.format("MM/DD/YYYY")}
-                    endDate={CALENDAR_EVENTS.events[i].end.format("MM/DD/YYYY")}
-                    colorIndex={CALENDAR_EVENTS.events[i].colorIndex}
+                    id={this.state.events[i]._id}
+                    title={this.state.events[i].title}
+                    startDate={moment(this.state.events[i].startDate).format("MM/DD/YYYY")}
+                    endDate={moment(this.state.events[i].endDate).format("MM/DD/YYYY")}
+                    colorIndex={this.state.events[i].colorIndex}
+                    updateEventList={this.updateEventList}
                 />
             );
         }
@@ -55,9 +110,9 @@ export default class AdminCalendarTool extends React.Component
             <div className="admin-calendar-tool">
                 <AdminTablePanel
                     headerText="Calendar Events"
-                    tableRows={this.getTableRows()}
+                    tableRows={this.state.tableRows}
                 />
-                <NewEventPanel/>
+                <NewEventPanel updateEventList={this.updateEventList}/>
             </div>
         );
     }

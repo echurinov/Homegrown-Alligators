@@ -31,28 +31,25 @@ export default class NewProjectPanel extends React.Component
     {
         event.preventDefault();
 
-        alert("Title: " + this.state.title
-            + ", Description: " + this.state.description
-            + ", Image: " + this.state.imagePath);
-
         const project = {
             title: this.state.title,
             description: this.state.description
         }
 
-        axios
-        .post('http://localhost:8082/api/project/add', project)
-        .then(res => {
-            this.setState({
-            title: '',
-            description: '',
-            imagePath:""
-            })
-            this.props.history.push('/admin');
+        const req = axios.post('http://localhost:8082/api/project/add', project)
+            .then(res => {
+                this.setState({
+                    title: '',
+                    description: '',
+                    imagePath:""
+                })
+            //this.props.history.push('/admin');
         })
         .catch(err => {
             console.log("Error in NewProjectPanel!");
         })
+
+        req.then(this.props.updateProjectList);
     }
 
     render() {
