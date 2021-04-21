@@ -37,7 +37,7 @@ export default class NewProjectPanel extends React.Component
             imageName: this.state.imageName
         }
 
-        const req = axios.post('http://localhost:8082/api/project/add', project)
+        const req = axios.post('https://ufssdc.herokuapp.com/api/project/add', project)
             .then(res => {
                 this.setState({
                     title: '',

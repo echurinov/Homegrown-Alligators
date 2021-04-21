@@ -37,7 +37,7 @@ export default class NewMemberPanel extends React.Component
             imageName: this.state.imageName
         };
 
-        const req = axios.post('http://localhost:8082/api/member/add', member)
+        const req = axios.post('https://ufssdc.herokuapp.com/api/member/add', member)
             .then(res => {
                 this.setState({
                     name: '',

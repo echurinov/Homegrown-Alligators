@@ -15,7 +15,7 @@ class ProjectRow extends React.Component
 
     handleClick()
     {
-        const req = axios.delete('http://localhost:8082/api/project/' + this.props.id, {params:{id:this.props.id}})
+        const req = axios.delete('https://ufssdc.herokuapp.com/api/project/' + this.props.id, {params:{id:this.props.id}})
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -60,7 +60,7 @@ export default class AdminProjects extends React.Component
 
     updateProjectList()
     {
-        const req = axios.get('http://localhost:8082/api/project/');
+        const req = axios.get('https://ufssdc.herokuapp.com/api/project/');
         
         req.then(res => {
             const projects = res.data;

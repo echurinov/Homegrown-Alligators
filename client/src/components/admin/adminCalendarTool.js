@@ -16,7 +16,7 @@ class CalendarEventRow extends React.Component
 
     handleClick()
     {
-        const req = axios.delete('http://localhost:8082/api/calendar/' + this.props.id, {params:{id:this.props.id}})
+        const req = axios.delete('https://ufssdc.herokuapp.com/api/calendar/' + this.props.id, {params:{id:this.props.id}})
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -64,7 +64,7 @@ export default class AdminCalendarTool extends React.Component
 
     updateEventList()
     {
-        const req = axios.get('http://localhost:8082/api/calendar/');
+        const req = axios.get('https://ufssdc.herokuapp.com/api/calendar/');
         
         req.then(res => {
             const events = res.data;

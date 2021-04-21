@@ -15,7 +15,7 @@ class MemberRow extends React.Component
 
     handleClick()
     {
-        const req = axios.delete('http://localhost:8082/api/member/' + this.props.id, {params:{id:this.props.id}})
+        const req = axios.delete('https://ufssdc.herokuapp.com/api/member/' + this.props.id, {params:{id:this.props.id}})
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -61,7 +61,7 @@ export default class AdminMembers extends React.Component
 
     updateMemberList()
     {
-        const req = axios.get('http://localhost:8082/api/member/');
+        const req = axios.get('https://ufssdc.herokuapp.com/api/member/');
         
         req.then(res => {
             const members = res.data;

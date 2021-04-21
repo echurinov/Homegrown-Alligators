@@ -31,7 +31,7 @@ export default class CalendarPage extends React.Component {
 
   updateEventList()
   {
-    const req = axios.get('http://localhost:8082/api/calendar/');
+    const req = axios.get('https://ufssdc.herokuapp.com/api/calendar/');
         
     req.then(res => {
       this.setState({events:this.buildEventsCollection(res.data)});

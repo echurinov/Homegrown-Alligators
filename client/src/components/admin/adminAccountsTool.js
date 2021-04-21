@@ -15,7 +15,7 @@ class AccountRow extends React.Component
 
     handleClick()
     {
-        const req = axios.delete('http://localhost:8082/api/account/' + this.props.id, {params:{id:this.props.id}})
+        const req = axios.delete('https://ufssdc.herokuapp.com/api/account/' + this.props.id, {params:{id:this.props.id}})
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -60,7 +60,7 @@ export default class AdminAccounts extends React.Component
 
     updateAccountList()
     {
-        const req = axios.get('http://localhost:8082/api/account/');
+        const req = axios.get('https://ufssdc.herokuapp.com/api/account/');
         
         req.then(res => {
             const accounts = res.data;
