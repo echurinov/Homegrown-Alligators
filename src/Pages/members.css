@@ -89,3 +89,10 @@ code {
     margin: 0;
   }
 }
+
+.list {
+  display: relative;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
