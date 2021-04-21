@@ -1,7 +1,20 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 import LoginForm from "../components/admin/loginForm";
 import AdminTools from "../components/admin/adminTools";
 import "./AdminLogin.css";
+
+class Account extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      email: this.props.name,
+      password: this.props.position,
+    };
+  }
+}
+
+const accounts = [<Account email="admin@admin.com" password="admin123" />];
 
 function AdminLogin() {
   const adminUser = {
@@ -40,7 +53,7 @@ function AdminLogin() {
         <div className="welcome">
           <h2>Welcome</h2>
           <button onClick={Logout}>Logout</button>
-          <AdminTools/>
+          <AdminTools />
         </div>
       ) : (
         <div className="login-form">

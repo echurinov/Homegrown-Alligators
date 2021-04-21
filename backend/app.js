@@ -13,6 +13,7 @@ var cors = require('cors');
 const member = require('./routes/api/member');
 const project = require('./routes/api/project');
 const calendar = require('./routes/api/calendar');
+const account = require('./routes/api/account');
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.get('/', (req, res) => res.send('Hello world!'));
 app.use('/api/member', member);
 app.use('/api/project', project);
 app.use('/api/calendar', calendar);
+app.use('/api/account', account);
 
 const port = process.env.PORT || 8082;
 
