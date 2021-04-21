@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./newAccountPanel.css";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import "./loginForm.css";
+const eye = <FontAwesomeIcon icon={faEye} />;
 
 export default class NewAccountPanel extends React.Component {
   constructor(props) {
@@ -56,7 +60,7 @@ export default class NewAccountPanel extends React.Component {
         <div className="new-account-form">
           <form onSubmit={this.handleSubmit}>
             <div className="input-text">
-              <label htmlFor="email">Email</label>
+              <div htmlFor="email">Email</div>
               <input
                 className="form-control"
                 type="text"
@@ -67,8 +71,8 @@ export default class NewAccountPanel extends React.Component {
               />
             </div>
 
-            <div className="input-password">
-              <label htmlFor="password">Password</label>
+            <div className="input-text">
+              <div htmlFor="password">Password</div>
               <input
                 className="form-control"
                 type="text"
