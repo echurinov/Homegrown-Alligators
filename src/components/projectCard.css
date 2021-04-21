@@ -1,55 +1,70 @@
 .project-box {
-    display: grid;
-    align-items: top;
-    margin-bottom: 5em;
-    width: 60%;
-    height: fit-content;
-    text-align: center;
-    justify-self: center;
-    margin-left: 20%;
-    margin-right: 20%;
+  display: grid;
+  align-items: top;
+  margin-bottom: 5em;
+  width: 60%;
+  height: fit-content;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .project-image img {
-    width: 100%;
-    max-height: auto;
-    margin-top: 3%;
+  width: 100%;
+  max-width: 100%;
+  max-height: auto;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
 }
-  
+
 .project-data {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-left: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5%;
 }
-  
+
 .project-title {
-    font-family: Josefin-Bold;
-    font-size: 2.5rem;
-    color: rgb(255, 255, 255);
-    margin-bottom: 1em;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5%;
-    margin-top: 3%;
+  font-family: Josefin-Bold;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 3%;
 }
-  
+
 .project-info {
-    font-family: Adventor;
-    word-wrap: break-word;
-    border: 10px white solid;
-    background: rgba(255, 255, 255, 0.5);
-    padding: 1em;
-    font-size: 130%;
-    justify-self: center;
-    align-items: center;
-    margin-top:5%;
+  font-family: Adventor;
+  word-wrap: break-word;
+  max-width: 100%;
+  border: 10px white solid;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1em;
+  font-size: 130%;
+  justify-self: center;
 }
-  
+
 .project-content {
-    display: flex;
-    flex-direction:column;
-    list-style: none;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .project-content {
+    display: grid;
+  }
+}
+@media screen and (max-width: 550px) {
+  .project-box {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+  }
+  .project-data {
+    margin: 0;
+  }
 }
