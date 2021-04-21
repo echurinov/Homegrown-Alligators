@@ -10,6 +10,10 @@ const MemberSchema = new mongoose.Schema({
   position: {
       type: String,
       required: true
+  },
+  imageName: {
+    type: String,
+    required: true
   }
 });
 

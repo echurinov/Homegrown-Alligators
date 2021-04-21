@@ -13,8 +13,9 @@ router.route('/').get((req, res) => {
 router.route('/add').post((req, res) => {
   const name = req.body.name;
   const position = req.body.position;
+  const imageName = req.body.imageName;
 
-  const newMember = new Member({name, position});
+  const newMember = new Member({name, position, imageName});
 
   newMember.save()
     .then(() => res.json('Member added!'))

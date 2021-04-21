@@ -13,8 +13,9 @@ router.route('/').get((req, res) => {
   router.route('/add').post((req, res) => {
     const title = req.body.title;
     const description = req.body.description;
+    const imageName = req.body.imageName;
   
-    const newProject = new Project({title, description});
+    const newProject = new Project({title, description, imageName});
   
     newProject.save()
       .then(() => res.json('Project added!'))
