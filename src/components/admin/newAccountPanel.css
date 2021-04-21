@@ -21,9 +21,11 @@
     display:flex;
     flex-direction:column;
     align-items:center;
+    text-align: center;
 }
 
-.new-account-panel .new-account-form label
+.new-account-panel .new-account-form .input-text
 {
-    text-align:center;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }

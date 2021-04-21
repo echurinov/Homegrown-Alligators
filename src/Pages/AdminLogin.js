@@ -2,21 +2,27 @@ import React, { useState } from "react";
 import LoginForm from "../components/admin/loginForm";
 import AdminTools from "../components/admin/adminTools";
 import "./AdminLogin.css";
-
-class Account extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      email: this.props.name,
-      password: this.props.position,
-    };
-  }
-}
-
-const accounts = [<Account email="admin@admin.com" password="admin123" />];
+import axios from "axios";
 
 function AdminLogin() {
+  const state = {
+    email: '',
+    password: '',
+    accounts:[],
+  }
+
+  axios
+    .get("http://localhost:8082/api/account/")
+    .then((res) => {
+      const accounts = res.data;
+      this.setState({ accounts: accounts });
+    })
+    .catch((err) => {
+      console.log("Error from AdminLogin.js");
+    });
+
+  const accounts = [<Account email="admin@admin.com" password="admin123" />];
+
   const adminUser = {
     email: "admin@admin.com",
     password: "admin123",
@@ -28,10 +34,7 @@ function AdminLogin() {
   const Login = (details) => {
     console.log(details);
 
-    if (
-      details.email == adminUser.email &&
-      details.password == adminUser.password
-    ) {
+    if (accounts.exists({ email: details.email, password: details.password })) {
       console.log("Logged in");
       setUser({
         name: details.name,
