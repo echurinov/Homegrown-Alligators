@@ -4,42 +4,58 @@ import Footer from "../components/footer";
 import Dayz from "dayz";
 import moment from "moment";
 import PageTitle from "../components/pageTitle";
-import "./calendar.css";
+import axios from "axios";
 import space5 from '../components/Images/space5.png';
+import "./calendar.css";
 import '../index.css';
-
 
 const TODAY = new Date();
 
-const EVENTS = new Dayz.EventsCollection([
-  {
-    content: "Career Fair",
-    range: moment.range(new Date(2021, 3, 1), new Date(2021, 3, 3)),
-    colorIndex: 3,
-  },
-  {
-    content: "GBM 1",
-    range: moment.range(new Date(2021, 3, 13), new Date(2021, 3, 13)),
-    colorIndex: 2,
-  },
-  {
-    content: "Workshop",
-    range: moment.range(new Date(2021, 3, 13), new Date(2021, 3, 13)),
-    colorIndex: 4,
-  },
-  {
-    content: "GBM 2",
-    range: moment.range(new Date(2021, 3, 29), new Date(2021, 3, 29)),
-    colorIndex: 2,
-  },
-  {
-    content: "Guest Lecture",
-    range: moment.range(new Date(2021, 3, 29), new Date(2021, 3, 29)),
-    colorIndex: 5,
-  },
-]);
-
 export default class CalendarPage extends React.Component {
+  constructor(props)
+  {
+    super(props);
+
+    this.state = {
+      events:new Dayz.EventsCollection([])
+    }
+
+    this.updateEventList = this.updateEventList.bind(this);
+    this.buildEventsCollection = this.buildEventsCollection.bind(this);
+  }
+
+  componentDidMount()
+  {
+    this.updateEventList();
+  }
+
+  updateEventList()
+  {
+    const req = axios.get('http://localhost:8082/api/calendar/');
+        
+    req.then(res => {
+      this.setState({events:this.buildEventsCollection(res.data)});
+    });
+  }
+
+  buildEventsCollection(rawEvents)
+  {
+    let eventCollection = new Dayz.EventsCollection();
+
+    for(let i = 0; i < rawEvents.length; i++)
+    {
+      eventCollection.add(
+        {
+          content:rawEvents[i].title,
+          range:moment.range(moment(rawEvents[i].startDate).utc(), moment(rawEvents[i].endDate).utc()),
+          colorIndex:rawEvents[i].colorIndex,
+        }
+      );
+    }
+
+    return eventCollection;
+  }
+
   render() {
     return (
       <div className="page">
@@ -54,7 +70,7 @@ export default class CalendarPage extends React.Component {
           <div className="month-title">
             <h2>{TODAY.toLocaleString("default", { month: "long" })}</h2>
           </div>
-          <Dayz display="month" date={this.props.date} events={EVENTS} />
+          <Dayz display="month" events={this.state.events}/>
         </div>
         <Footer />
       </div>
