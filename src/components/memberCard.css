@@ -18,10 +18,12 @@
 }
 
 .member-image img {
-  width: 100%;
-  max-height: auto;
+  width: 300px;
+  height: 300px;
   margin-bottom: 10%;
   margin-top: 15%;
+  object-fit: cover;
+  object-position: 20% 10%; /* try 20px 10px */ 
 }
 
 .member-info {
