@@ -17,7 +17,7 @@ export default class CalendarPage extends React.Component {
     super(props);
 
     this.state = {
-      events:new Dayz.EventsCollection()
+      events:new Dayz.EventsCollection([])
     }
 
     this.updateEventList = this.updateEventList.bind(this);
