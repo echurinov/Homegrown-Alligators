@@ -32,17 +32,16 @@ code {
   margin-bottom: 5em;
   width: 60%;
   height: fit-content;
+  text-align: center;
+  justify-self: center;
   margin-left: 20%;
   margin-right: 20%;
 }
 
 .project-image img {
   width: 100%;
-  max-width: 100%;
   max-height: auto;
-  margin-bottom: 3%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 3%;
 }
 
 .project-data {
@@ -67,12 +66,14 @@ code {
 .project-info {
   font-family: Adventor;
   word-wrap: break-word;
-  max-width: 100%;
+  max-width: 70rem;
+  min-width: 70rem;
   border: 10px white solid;
   background: rgba(255, 255, 255, 0.5);
   padding: 1em;
   font-size: 130%;
   justify-self: center;
+  align-items: center;
 }
 
 .project-content {
