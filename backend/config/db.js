@@ -7,7 +7,7 @@ require("dotenv").config();
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || db, {
+    await mongoose.connect("mongodb+srv://NicSantiago:lessgo@cluster0.z11sm.mongodb.net/sample_members?retryWrites=true&w=majority", {
       useNewUrlParser: true,
     });
 
