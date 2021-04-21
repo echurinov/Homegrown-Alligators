@@ -11,7 +11,7 @@ export default class NewMemberPanel extends React.Component
         this.state = {
             name:"Input Member Name...",
             position:"Input Member Position...",
-            imagePath:""
+            imageName:"Input Image name..."
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -33,14 +33,16 @@ export default class NewMemberPanel extends React.Component
 
         const member = {
             name: this.state.name,
-            position: this.state.position
+            position: this.state.position,
+            imageName: this.state.imageName
         };
 
         const req = axios.post('http://localhost:8082/api/member/add', member)
             .then(res => {
                 this.setState({
                     name: '',
-                    position: ''
+                    position: '',
+                    imageName: ''
                 })
             //this.props.history.push('/admin');
         })
@@ -70,9 +72,9 @@ export default class NewMemberPanel extends React.Component
                             <input type="text" id="position" name="position" className='form-control' value={this.state.position} onChange={this.handleChange}/>
                         </div>
 
-                        <div className="input-image">
-                            <label htmlFor="imagePath">Image</label>
-                            <input type="file" accept="image/*" id="imagePath" name="imagePath"  className='form-control' value={this.state.imagePath} onChange={this.handleChange}/>
+                        <div className="input-text">
+                            <label htmlFor="imageName">Image Name</label>
+                            <input type="text" id="imageName" name="imageName" className='form-control' value={this.state.imageName} onChange={this.handleChange}/>
                         </div>
 
                         <input type="submit" value="Add Member"/>

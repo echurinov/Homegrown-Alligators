@@ -11,7 +11,7 @@ export default class NewProjectPanel extends React.Component
         this.state = {
             title:"Input Project Title...",
             description:"Input Project Description...",
-            imagePath:""
+            imageName:"Input image name..."
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -33,7 +33,8 @@ export default class NewProjectPanel extends React.Component
 
         const project = {
             title: this.state.title,
-            description: this.state.description
+            description: this.state.description,
+            imageName: this.state.imageName
         }
 
         const req = axios.post('http://localhost:8082/api/project/add', project)
@@ -41,7 +42,7 @@ export default class NewProjectPanel extends React.Component
                 this.setState({
                     title: '',
                     description: '',
-                    imagePath:""
+                    imageName: ''
                 })
             //this.props.history.push('/admin');
         })
@@ -71,9 +72,9 @@ export default class NewProjectPanel extends React.Component
                             <textarea id="description" name="description" value={this.state.description} onChange={this.handleChange} rows="10" cols="50"/>
                         </div>
 
-                        <div className="input-image">
-                            <label htmlFor="imagePath">Image</label>
-                            <input type="file" accept="image/*" id="imagePath" name="imagePath" value={this.state.imagePath} onChange={this.handleChange}/>
+                        <div className="input-text">
+                            <label htmlFor="imageName">Image Name</label>
+                            <input type="text" id="imageName" name="imageName" className='form-control' value={this.state.imageName} onChange={this.handleChange}/>
                         </div>
 
                         <input type="submit" value="Add Project"/>
