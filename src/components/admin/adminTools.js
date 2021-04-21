@@ -48,7 +48,6 @@ export default class AdminTools extends React.Component {
         <Dropdown headerText="Calendar Tool" contents={<AdminCalendarTool />} />
         <Dropdown headerText="Members Tool" contents={<AdminMembersTool />} />
         <Dropdown headerText="Projects Tool" contents={<AdminProjectsTool />} />
-        <Dropdown headerText="Accounts Tool" contents={<AdminAccountsTool />} />
       </div>
     );
   }
