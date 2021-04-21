@@ -1,14 +1,11 @@
 import React from 'react';
-import gatorImage from './Images/Gators Logo.png';
 import "./memberCard.css"
-
 
 export default class MemberCard extends React.Component
 {   
 
     render() {
-        let imagesrc = '../Images/' + this.props.member.imageName;
-        console.log(imagesrc);
+        let imagesrc = '../member-images/' + this.props.member.imageName;
 
         return (
             <div className="member-box">
