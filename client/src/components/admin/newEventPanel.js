@@ -42,7 +42,7 @@ export default class NewEventPanel extends React.Component
             colorIndex: this.state.colorIndex
         }
 
-        const req = axios.post('http://localhost:8082/api/calendar/add', calendarEvent)
+        const req = axios.post('https://ufssdc.herokuapp.com/api/calendar/add', calendarEvent)
             .then(res => {
                 this.setState({
                     title: '',

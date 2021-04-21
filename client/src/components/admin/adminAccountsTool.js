@@ -1,10 +1,10 @@
 import React from "react";
 import AdminTablePanel from "./adminTablePanel";
-import NewProjectPanel from "./newProjectPanel";
+import NewAccountPanel from "./newAccountPanel";
 import axios from "axios";
-import "./adminProjectsTool.css"
+import "./adminAccountsTool.css"
 
-class ProjectRow extends React.Component
+class AccountRow extends React.Component
 {
     constructor(props)
     {
@@ -15,20 +15,20 @@ class ProjectRow extends React.Component
 
     handleClick()
     {
-        const req = axios.delete('http://localhost:8082/api/project/' + this.props.id, {params:{id:this.props.id}})
+        const req = axios.delete('https://ufssdc.herokuapp.com/api/account/' + this.props.id, {params:{id:this.props.id}})
             .then(res => {
                 console.log(res);
                 console.log(res.data);
             });
 
-        req.then(this.props.updateProjectList);
+        req.then(this.props.updateAccountList);
     }
 
     render()
     {
         return (
             <tr>
-                <td>{this.props.title}</td>
+                <td>{this.props.email}</td>
                 <td>
                     <button onClick={this.handleClick}>
                         Delete
@@ -39,32 +39,32 @@ class ProjectRow extends React.Component
     }
 }
 
-export default class AdminProjects extends React.Component
+export default class AdminAccounts extends React.Component
 {
     constructor(props)
     {
         super(props);
 
         this.state = {
-            projects:[],
+            accounts:[],
             tableRows:[]
         }
 
-        this.updateProjectList = this.updateProjectList.bind(this);
+        this.updateAccountList = this.updateAccountList.bind(this);
     }
 
     componentDidMount()
     {
-        this.updateProjectList();
+        this.updateAccountList();
     }
 
-    updateProjectList()
+    updateAccountList()
     {
-        const req = axios.get('http://localhost:8082/api/project/');
+        const req = axios.get('https://ufssdc.herokuapp.com/api/account/');
         
         req.then(res => {
-            const projects = res.data;
-            this.setState({projects:projects});
+            const accounts = res.data;
+            this.setState({accounts:accounts});
             this.setState({tableRows:this.constructTableRows()});
         });
     }
@@ -75,18 +75,18 @@ export default class AdminProjects extends React.Component
 
         tableRows.push(
             <tr>
-                <th>Title</th>
+                <th>Email</th>
                 <th>Options</th>
             </tr>
         );
 
-        for(var i = 0; i < this.state.projects.length; i++)
+        for(var i = 0; i < this.state.accounts.length; i++)
         {
             tableRows.push(
-                <ProjectRow
-                    id={this.state.projects[i]._id}
-                    title={this.state.projects[i].title}
-                    updateProjectList={this.updateProjectList}
+                <AccountRow
+                    id={this.state.accounts[i]._id}
+                    title={this.state.accounts[i].email}
+                    updateAccountList={this.updateAccountList}
                 />
             );
         }
@@ -97,12 +97,12 @@ export default class AdminProjects extends React.Component
     render()
     {
         return (
-            <div className="admin-projects-tool">
+            <div className="admin-accounts-tool">
                 <AdminTablePanel
-                    headerText="Projects"
+                    headerText="Accounts"
                     tableRows={this.state.tableRows}
                 />
-                <NewProjectPanel updateProjectList={this.updateProjectList}/>
+                <NewAccountPanel updateAccountList={this.updateAccountList}/>
             </div>
         );
     }

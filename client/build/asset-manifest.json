@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.55fd803b.chunk.css",
+    "main.js": "/static/js/main.b8e9816c.chunk.js",
+    "main.js.map": "/static/js/main.b8e9816c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bd77a71c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bd77a71c.js.map",
+    "static/js/2.d1448273.chunk.js": "/static/js/2.d1448273.chunk.js",
+    "static/js/2.d1448273.chunk.js.map": "/static/js/2.d1448273.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.55fd803b.chunk.css.map": "/static/css/main.55fd803b.chunk.css.map",
+    "static/js/2.d1448273.chunk.js.LICENSE.txt": "/static/js/2.d1448273.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/texgyreadventor-regular.755902d1.otf",
+    "static/media/Gators Logo.8ecc771f.png": "/static/media/Gators Logo.8ecc771f.png",
+    "static/media/facebook.4c733b9b.png": "/static/media/facebook.4c733b9b.png",
+    "static/media/instagram.8e397971.png": "/static/media/instagram.8e397971.png",
+    "static/media/logo.49ebe1fd.png": "/static/media/logo.49ebe1fd.png",
+    "static/media/space1.ce02ec1d.png": "/static/media/space1.ce02ec1d.png",
+    "static/media/space2.263d9b6a.png": "/static/media/space2.263d9b6a.png",
+    "static/media/space3.5056b578.png": "/static/media/space3.5056b578.png",
+    "static/media/space4.fb5f3e99.png": "/static/media/space4.fb5f3e99.png",
+    "static/media/space5.ab9d32d7.png": "/static/media/space5.ab9d32d7.png",
+    "static/media/stock1.3cc87bc3.png": "/static/media/stock1.3cc87bc3.png",
+    "static/media/stock2.069c5240.jpg": "/static/media/stock2.069c5240.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd77a71c.js",
+    "static/js/2.d1448273.chunk.js",
+    "static/css/main.55fd803b.chunk.css",
+    "static/js/main.b8e9816c.chunk.js"
+  ]
+}

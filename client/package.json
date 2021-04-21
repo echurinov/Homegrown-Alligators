@@ -1,0 +1,61 @@
+{
+  "name": "Homegrown-Alligators",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "basic-auth": "^2.0.1",
+    "concurrently": "^6.0.2",
+    "dayz": "^2.9.0",
+    "install": "^0.13.0",
+    "mocha": "^8.3.2",
+    "moment": "^2.29.1",
+    "moment-range": "^4.0.2",
+    "mongodb": "^3.6.6",
+    "morgan": "^1.10.0",
+    "npm": "^7.10.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
+    "react-scripts": "^4.0.3",
+    "styled-components": "^5.2.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.1.1",
+    "worker-rpc": "^0.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "mocha server.test.js",
+    "eject": "react-scripts eject",
+    "client": "cd backend && npm start",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}

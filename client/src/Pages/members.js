@@ -19,7 +19,7 @@ export default class Members extends React.Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:8082/api/member/')
+      .get('https://ufssdc.herokuapp.com/api/member/')
       .then(res => {
         //console.log("Print-showMembers-API-response: " + res.data.length)
         const members = res.data;

@@ -1,67 +1,35 @@
 {
-  "name": "Homegrown-Alligators",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.3",
-    "axios": "^0.21.1",
-    "basic-auth": "^2.0.1",
-    "concurrently": "^6.0.2",
-    "config": "^3.3.6",
-    "dayz": "^2.9.0",
-    "express": "^4.17.1",
-    "install": "^0.13.0",
-    "mocha": "^8.3.2",
-    "moment": "^2.29.1",
-    "moment-range": "^4.0.2",
-    "mongodb": "^3.6.6",
-    "mongoose": "^5.12.4",
-    "morgan": "^1.10.0",
-    "npm": "^7.10.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-icons": "^4.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
-    "styled-components": "^5.2.1",
-    "uuid": "^8.3.2",
-    "web-vitals": "^1.1.1",
-    "worker-rpc": "^0.1.1"
-  },
+  "name": "homegrown-alligators",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.test.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "heroku-postbuild": "npm install && npm run build",
-    "test": "mocha server.test.js",
-    "eject": "react-scripts eject",
-    "client": "cd backend && npm start",
-    "dev": "concurrently \"npm start\" \"npm run client\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backend  && node app.js",
+    "client": "cd client && npm start",
+    "server": "cd backend  && node app.js",
+    "heroku-postbuild": "cd client && rm -rf node_modules && npm install && npm run build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echurinov/Homegrown-Alligators.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echurinov/Homegrown-Alligators/issues"
   },
-  "devDependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^8.3.2"
+  "homepage": "https://github.com/echurinov/Homegrown-Alligators#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.5",
+    "path": "^0.12.7",
+    "react-router-dom": "^5.2.0",
+    "validation": "0.0.1"
   }
 }

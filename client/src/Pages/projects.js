@@ -18,7 +18,7 @@ export default class Projects extends React.Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:8082/api/project/')
+      .get('https://ufssdc.herokuapp.com/api/project/')
       .then(res => {
         //console.log("Print-showMembers-API-response: " + res.data.length)
         const projects = res.data;

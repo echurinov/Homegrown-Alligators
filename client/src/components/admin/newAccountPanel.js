@@ -36,7 +36,7 @@ export default class NewAccountPanel extends React.Component {
     };
 
     const req = axios
-      .post("http://localhost:8082/api/account/add", account)
+      .post("https://ufssdc.herokuapp.com/api/account/add", account)
       .then((res) => {
         this.setState({
           email: "",
