@@ -1,24 +1,26 @@
 import React from 'react';
 import gatorImage from './Images/Gators Logo.png';
+import "./projectCard.css"
 
-const ProjectCard = (props) => {
-    const  project  = props.project;
-
-    return(
-        <div className="project-box">
-            <div className="project-image">
-                <img src={gatorImage} alt="" />
+export default class ProjectCard extends React.Component
+{
+    render() {
+        return (
+            <div className="project-box">
+                <div className="project-title">
+                    <h2>{this.props.project.title}</h2>
+                </div>
+                <ul className="project-content">
+                    <li className="project-image">
+                        <img src={gatorImage} alt="" />
+                    </li>
+                    <li className="project-data">
+                        <div className="project-info">
+                            <text>{this.props.project.description}</text>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div className="project-info">
-                <h2>
-                    {project.title}
-                </h2>
-                <h3>
-                    {project.description}
-                </h3>
-            </div>
-        </div>
-    )
-};
-
-export default ProjectCard;
+        );
+    }
+}
