@@ -15,7 +15,6 @@ export default class Projects extends React.Component {
        projects: []
     };
   }
-  
 
   componentDidMount() {
     axios
@@ -53,7 +52,7 @@ export default class Projects extends React.Component {
           <PageTitle text="PROJECTS" />
         </div>
 
-        <div className="list" >
+        <div className="list">
           {projectList}
         </div>
 

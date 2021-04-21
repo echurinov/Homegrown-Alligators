@@ -28,70 +28,10 @@ code {
   max-width: 100%;
 }
 
-.member-grid {
+.list {
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  margin-top: 3em;
-  margin-bottom: 5em;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.member-content{
-  margin-right: 3rem;
-  margin-left: 3rem;
-}
-
-.member-box {
-  position: relative;
-  display:flex;
-  flex-direction:column;
-  width: 25rem;
-  min-width: 2rem;
-  height: fit-content;
-  text-align: center;
-  justify-self: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%;
-}
-
-.member-image img {
-  width: 100%;
-  max-height: auto;
-  margin-bottom: 10%;
-  margin-top: 15%;
-}
-
-.member-info {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  height:7em;
-  font-family: Adventor;
-  font-size: 100%;
-  border: 5px solid white;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 5%;
-}
-
-.member-name {
-  font-size: 110%;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 500px) {
-  .member-grid {
-    margin: 0;
-  }
-  .member-content{
-    margin: 0;
-  }
-}
-
-.list {
-  display: relative;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;

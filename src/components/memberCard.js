@@ -1,24 +1,26 @@
 import React from 'react';
 import gatorImage from './Images/Gators Logo.png';
+import "./memberCard.css"
 
-const MemberCard = (props) => {
-    const  member  = props.member;
-
-    return(
-        <div className="member-box">
-            <div className="member-image">
-                <img src={gatorImage} alt="" />
+export default class MemberCard extends React.Component
+{
+    render() {
+        return (
+            <div className="member-box">
+                <div className="member-content">
+                    <div className="member-image">
+                        <img src={gatorImage} alt="" /> 
+                    </div>
+                    <div className="member-info">
+                        <div className="member-name">
+                            <p>{this.props.member.name}</p>
+                        </div>
+                        <div className="member-role">
+                            <p>{this.props.member.position}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="member-info">
-                <h2>
-                    {member.name}
-                </h2>
-                <h3>
-                {member.position}
-            </h3>
-            </div>
-        </div>
-    )
-};
-
-export default MemberCard;
+        );
+    }
+}
