@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "basic-auth": "^2.0.1",
     "concurrently": "^6.0.2",
     "config": "^3.3.6",
     "dayz": "^2.9.0",
@@ -35,7 +36,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-
     "test": "mocha server.test.js",
     "eject": "react-scripts eject",
     "client": "cd backend && npm start",
