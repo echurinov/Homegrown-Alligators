@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Load models
-const Member = require('../../models/Account');
+const Account = require('../../models/Account');
 
 router.route('/').get((req, res) => {
   Account.find()
@@ -14,7 +14,7 @@ router.route('/add').post((req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
-  const newAccountr = new Account({email, password});
+  const newAccount = new Account({email, password});
 
   newAccount.save()
     .then(() => res.json('Account added!'))
@@ -28,20 +28,20 @@ router.route('/:id').get((req, res) => {
 });
 
 router.route('/:id').delete((req, res) => {
-  Member.findByIdAndDelete(req.params.id)
-    .then(() => res.json('Member deleted.'))
+  account.findByIdAndDelete(req.params.id)
+    .then(() => res.json('account deleted.'))
       .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/update/:id').post((req, res) => {
-  Member.findById(req.params.id)
-    .then(member => {
-      member.name = req.body.name;
-      member.position = req.body.position;
+  Account.findById(req.params.id)
+    .then(account => {
+      account.email = req.body.email;
+      account.password = req.body.password;
 
 
-      member.save()
-        .then(() => res.json('Member updated!'))
+      account.save()
+        .then(() => res.json('Account updated!'))
         .catch(err => res.status(400).json('Error: ' + err));
     })
     .catch(err => res.status(400).json('Error: ' + err));
