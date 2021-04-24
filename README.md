@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+
+# Welcome to the UF Space Systems Design Club Website Repository
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## The project is hosted via heroku
 
-In the project directory, you can run:
+Can be loacted at [http://ufssdc.herokuapp.com/](http://ufssdc.herokuapp.com/)
 
-### `npm start`
+## Available Scripts 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm run dev`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Runs the project in development mode.
 
-### `npm test`
+Launches the backend server which connectes to the MongoDB database.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project editing Documentation
 
-### `npm run build`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Server is hosted via MongoDB and connected with [Axios](https://www.npmjs.com/package/axios).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### How to edit the Homepage Scrolling Banner images
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The files that are stored for the scrolling banner images are hosted in '/client/src/components/Images'
+Currently there are 4 images used for the banner. Stored in an object in '/client/src/components/ScrollerData.js'
+'space1.png', 'space2.png', 'space3.png', 'space4.png'
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Without editing the code the images can be changed by removing any of those 4 files and replacing them with files of the same name
+Editing ScrollerData.js can be done to change the image files used and add more images to the scrolling banner. 
 
-### `npm run eject`
+### Other homepage elements
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The two homepage elements are stored in '/client/components/Images' as 'stock1.png' and 'stock2.png'
+The can be replaced in the file '/client/Pages/home.js'
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+All homepage text can be replaced in '/client/Pages/home.js' as well
+Update style changes on '/client/Pages/home.css'
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### How to edit the About Us Page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Image is stored in '/client/components/Images' as "Gator Logo.png"
+Image and text can be replaced in '/client/Pages/About.js'
+All colors and other style changes can be made in '/client/Pages/About.css'
 
-## Learn More
+## How to edit the Members Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Members can be added/removed via the admin portal member tool
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+All colors and other style changes can be made in '/client/Pages/members.css'
 
-### Code Splitting
+## How to edit the Projects Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Projects can be added/removed via the admin portal project tool
 
-### Analyzing the Bundle Size
+Update style changes on '/client/Pages/projects.css'
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to edit the Contact Us Page
 
-### Making a Progressive Web App
+Edit the contact information in '/client/Pages/Contact.js' by replacing the current contact information listed
+The map location was created using [embedmaps.org](https://embedmaps.org/) and can be edited by creaing a new widget code and replacing the <iframe> section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Update style changes on '/client/Pages/Contact.css'
 
-### Advanced Configuration
+## How to edit the Calendar Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Edit the calendar events via the admin portal calendar tool
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Update style changes on 'client/src/Pages/calendar.css'
